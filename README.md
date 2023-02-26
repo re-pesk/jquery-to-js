@@ -1,1 +1,3 @@
-# jquery-to-js
+# jQuery to JS
+
+[Index](docs/index.md)
