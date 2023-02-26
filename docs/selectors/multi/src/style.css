@@ -1,0 +1,9 @@
+div, span, p {
+  width: 126px;
+  height: 60px;
+  float: left;
+  padding: 3px;
+  margin: 2px;
+  background-color: #eee;
+  font-size: 14px;
+}
