@@ -1,11 +1,11 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Selector `parent > child`
+# Child Selector (`parent > child`)
 
-| jQuery | JS |
-|:--:|:--:|
-| `$('parent > child')` | `querySelectorAll('parent > child')` |
+| jQuery | JS | Description |
+|:--:|:--:|:--:|
+| `$('parent > child')` | `querySelectorAll('parent > child')` | Selects all direct child elements specified by "**_child_**" of elements specified by "parent". |
 
 ## jQuery
 

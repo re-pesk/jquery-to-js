@@ -1,11 +1,11 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Multiple selector `selector1, selector2, selectorN`
+# Multiple selector (`selector1, selector2, selectorN`)
 
-| jQuery | JS |
-|:--:|:--:|
-| `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` |
+| jQuery | JS | Description |
+|:--:|:--:|:--:|
+| `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` | Selects the **_combined results_** of all the specified selectors. |
 
 ## jQuery
 

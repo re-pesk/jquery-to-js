@@ -1,11 +1,11 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Selector `.class`
+# Class Selector (`.class`)
 
-| jQuery | JS |
-|:--:|:--:|
-| `$('.class')` | `querySelectorAll('.class')` |
+| jQuery | JS | Description |
+|:--:|:--:|:--:|
+| `$('.class')` | `querySelectorAll('.class')` | Selects all elements with the given **_class_**. |
 
 ## jQuery
 

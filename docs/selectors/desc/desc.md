@@ -1,11 +1,11 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Selector `ancestor descendant`
+# Descendant selector (`ancestor descendant`)
 
-| jQuery | JS |
-|:--:|:--:|
-| `$('ancestor descendant')` | `querySelectorAll('ancestor descendant')` |
+| jQuery | JS | Description |
+|:--:|:--:|:--:|
+| `$('ancestor descendant')` | `querySelectorAll('ancestor descendant')` | Selects all elements that are **_descendants_** of a given ancestor. |
 
 ## jQuery
 

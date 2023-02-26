@@ -1,11 +1,11 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Selector `#id`
+# ID Selector (`#id`)
 
-| jQuery | JS |
-|:--:|:--:|
-| `$('#id')` | `querySelector('#id')` |
+| jQuery | JS | Description |
+|:--:|:--:|:--:|
+| `$('#id')` | `querySelector('#id')` | Selects a single element with the given **_id_** attribute. |
 
 ## jQuery
 

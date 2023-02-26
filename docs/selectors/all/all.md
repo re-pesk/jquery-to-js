@@ -1,11 +1,11 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Selector `*` (All)
+# All Selector (`*`)
 
-| jQuery | JS |
-|:--:|:--:|
-| `$('*')` | `querySelectorAll('*')` |
+| jQuery | JS | Description |
+|:--:|:--:|:--:|
+| `$('*')` | `querySelectorAll('*')` | Selects **_all_** elements. |
 
 ## jQuery
 

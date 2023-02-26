@@ -1,11 +1,11 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Selector `tag`
+# Element Selector (`element`)
 
-| jQuery | JS |
-|:--:|:--:|
-| `$('tag')` | `querySelectorAll('tag')` |
+| jQuery | JS | Description |
+|:--:|:--:|:--:|
+| `$('element')` | `querySelectorAll('element')` | Selects all elements with the given **_tag name_**. |
 
 ## jQuery
 
