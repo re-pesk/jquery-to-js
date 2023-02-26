@@ -12,3 +12,4 @@
 | Multiple | `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` | Selects the **_combined results_** of all the specified selectors. | [More](?multi/) |
 | Child | `$('parent > child')` | `querySelectorAll('parent > child')` | Selects all direct child elements specified by "**_child_**" of elements specified by "parent". | [More](?child/) |
 | Descendant | `$('ancestor descendant')` | `querySelectorAll('ancestor descendant')` | Selects all elements that are **_descendants_** of a given ancestor. | [More](?desc/) |
+| Next Adjacent | `$('prev + next')` | `querySelectorAll('prev + next')` | Selects all **_next_** elements matching "next" that are **_immediately preceded_** by a sibling "prev" | [More](?next/) |
