@@ -3,7 +3,7 @@
 
 # Selectors
 
-* `$('*')` - select _all_ elements. [More](?all/all.md)
-* `$('.class')` - select all elements with the given _class_. [More](?class/class.md)
-* `$('tag')` - select all elements with the given _tag_ name. [More](?tag/tag.md)
-* `$('#id')` - select a single element with the given _id_ attribute. [More](?id/id.md)
+* `$('*')` - select _all_ elements. [More](?all/)
+* `$('.class')` - select all elements with the given _class_. [More](?class/)
+* `$('tag')` - select all elements with the given _tag_ name. [More](?tag/)
+* `$('#id')` - select a single element with the given _id_ attribute. [More](?id/)

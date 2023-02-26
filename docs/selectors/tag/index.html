@@ -14,6 +14,7 @@
     const mdview = `mdview.html`;
     const { origin, pathname } = window.location;
     const splitedPath = pathname.split('/');
+    splitedPath[splitedPath.length - 1] = '';
     const basePath = splitedPath.slice(1, baseNo + 1).join('/');
     const restPath = splitedPath.slice(baseNo + 1).join('/');
     const last = splitedPath.at(-2) + `.md`;
