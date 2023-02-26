@@ -9,3 +9,4 @@
 * `$('#id')` - select a single element with the given _id_ attribute. [More](?id/)
 * `$('selector1, selector2, selectorN')` - _multiple selector_. [More](?multi/)
 * `$('parent > child')` - _child selector_. [More](?child/)
+* `$('ancestor descendant')` - _descendant selector_. [More](?desc/)
