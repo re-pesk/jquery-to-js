@@ -13,3 +13,4 @@
 | Child | `$('parent > child')` | `querySelectorAll('parent > child')` | Selects all direct child elements specified by "**_child_**" of elements specified by "parent". | [More](?child/) |
 | Descendant | `$('ancestor descendant')` | `querySelectorAll('ancestor descendant')` | Selects all elements that are **_descendants_** of a given ancestor. | [More](?descendants/) |
 | Next Adjacent | `$('prev + next')` | `querySelectorAll('prev + next')` | Selects all **_next_** elements matching "next" that are **_immediately preceded_** by a sibling "prev" | [More](?next/) |
+| Next Siblings | `$('prev ~ siblings')` | `querySelectorAll('prev ~ siblings')` | Selects all **_sibling_** elements that follow after the "prev" element, have the same parent, and match the filtering "siblings" selector. | [More](?siblings/) |
