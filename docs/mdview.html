@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+  <title>Document</title>
+  <style>
+    @import "https://cdn.jsdelivr.net/gh/pixelbrackets/gfm-stylesheet/dist/gfm.min.css";
+    /* @import "http://thomasf.github.io/solarized-css/solarized-dark.min.css"; */
+    /* @import "src/styles/style.css"; */
+
+    body {
+      padding: 0 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content"></div>
+  <script type="module">
+    import 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
+
+    const q = (selector, context) => (context || document).querySelector(selector);
+    const qq = (selector, context) => (context || document).querySelectorAll(selector);
+
+    Node.prototype.on = Node.prototype.addEventListener;
+    window.on = window.addEventListener;
+
+    // eslint-disable-next-line no-proto
+    NodeList.prototype.__proto__ = Array.prototype;
+
+    // eslint-disable-next-line no-multi-assign, func-names
+    NodeList.prototype.on = NodeList.prototype.addEventListener = function (name, fn) {
+      this.forEach((elem) => {
+        elem.on(name, fn);
+      });
+    }.bind(NodeList.prototype);
+
+    async function getContent(url) {
+      return await fetch(url)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+          }
+          return response.text();
+        });
+    }
+
+    function splitPathName(pathName = window.location.pathname) {
+      const pathArray = pathName.split('/');
+      const fileName = pathArray.pop();
+      const path = pathArray.join('/');
+      return { path, fileName };
+    }
+
+    function replacer(hrefArg) {
+      let href = hrefArg;
+
+      // If href string starts with http(s), it is a link to external resource. Add 'target="_blank"' and return
+      if (href.startsWith(`"http`)) {
+        return `${href} target="_blank"`;
+      }
+
+      // If prefix does not empty, insert it to beginning of href
+      if (prefix) {
+        href = href.replace(/(?<=")(\??)([^?"]*)(?=")/, `$1${prefix}/$2`);
+      }
+
+      // If href string has character sequence without '/' and '"'' characters, 
+      // followed by '/../' string, replace them all with './' string
+      if (href.includes('/../')) {
+        href = href.replace(/[^?"/]+\/\.\.\//g, './');
+      }
+
+      // If href string starts with '"?' string and ends with '/"' string, it is a default search string to certain directory.
+      // Add 'target="_blank"' and return
+      if (href.startsWith('"?') && href.endsWith('/"')) {
+        href = href.replace(/\/(?=")/, '/index.md');
+        href = href.replace(/\.\//, '');
+        return href;
+      }
+
+      // If href string does not start with '?' and ends with '.hmtl', it is link to local page. Add 'target="_blank"' and return
+      if (href.charAt(1) !== '?' && href.endsWith('.html"')) {
+        return `${href} target="_blank"`;
+      }
+
+      return href;
+    }
+
+    function loadSrc(contextStr, prefix) {
+      let context;
+      if (contextStr) {
+        context = q(contextStr);
+      }
+      const codeTagList = qq('code[class^="language-js:"]', context);
+      codeTagList.forEach(element => {
+        const classList = element.classList.value.split(' ');
+        const classIndex = classList.findIndex(element => element.match(/^language-js\:/));
+        const oldClassName = classList[classIndex];
+        element.classList.replace(oldClassName, 'language-js');
+
+        const src = oldClassName.split(':')[1];
+        fetch(`${prefix}/${src}`)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+            }
+            return response.text();
+          }).then((text) => (element.textContent = text));
+      });
+    }
+
+    const baseNo = 1;
+    const mdview = 'mdview.html';
+    const { origin, pathname } = window.location;
+    const splitedPath = pathname.split('/');
+    const basePath = splitedPath.slice(1, baseNo + 1).join('/');
+    const last = splitedPath.at(-2) + `.md`;
+
+    const mdFileName = `?${last}`;
+    let url = '';
+    let prefix = '';
+    const searchString = window.location.search.slice(1);
+    if (searchString) {
+      prefix = splitPathName(searchString).path;
+      url = window.location.toString();
+    } else {
+      url = `${window.location.toString()}${mdFileName}`;
+    }
+    const regexp = new RegExp(`${mdview}\\?`);
+    const fileToLoad = url.replace(regexp, '');
+    const mdContent = await getContent(fileToLoad);
+    const htmlContent = marked.parse(mdContent, { gfm: true, xhtml: true });
+    const processedContent = htmlContent.replaceAll(/(?<=href=)"[^"]*"/g, replacer);
+    q('#content').innerHTML = processedContent;
+    loadSrc('#content', prefix);
+
+  </script>
+  <github-ribbon link="https://github.com/re-pesk/jquery-to-js/" new-window="True" color="brown"></github-ribbon>
+  <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/GitHub-Ribbon-Web-Component/dist/github-ribbon-wc.min.js"></script>
+</body>
+
+</html>
