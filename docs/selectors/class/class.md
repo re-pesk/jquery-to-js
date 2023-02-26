@@ -3,16 +3,24 @@
 
 # Selector `.class`
 
-| jQuery        | JS                           |
-|:-------------:|:----------------------------:|
+| jQuery | JS |
+|:--:|:--:|
 | `$('.class')` | `querySelectorAll('.class')` |
 
-jQuery code ([live example](class-jq.html)):
+## jQuery
+
+[Example](class-jq.html):
 
 ```js:src/class-jq.js
 ```
 
-Vanilla JavaScript code ([live example](class-va.html)):
+<iframe width="100%" height="150" src="class-jq.html"></iframe>
+
+## Vanilla JS
+
+[Example](class-va.html):
 
 ```js:src/class-va.js
 ```
+
+<iframe width="100%" height="150" src="class-va.html"></iframe>

@@ -138,7 +138,8 @@
     const fileToLoad = url.replace(regexp, '');
     const mdContent = await getContent(fileToLoad);
     const htmlContent = marked.parse(mdContent, { gfm: true, xhtml: true });
-    const processedContent = htmlContent.replaceAll(/(?<=href=)"[^"]*"/g, replacer);
+    let processedContent = htmlContent.replaceAll(/(?<=href=)"[^"]*"/g, replacer);
+    processedContent = processedContent.replaceAll(/(?<=src=)"[^"]*"/g, replacer);
     q('#content').innerHTML = processedContent;
     loadSrc('#content', prefix);
 

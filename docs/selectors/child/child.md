@@ -7,12 +7,20 @@
 |:--:|:--:|
 | `$('parent > child')` | `querySelectorAll('parent > child')` |
 
-jQuery code ([live example](child-jq.html)):
+## jQuery
+
+[Example](child-jq.html):
 
 ```js:src/child-jq.js
 ```
 
-Vanilla JavaScript code ([live example](child-va.html)):
+<iframe width="100%" height="150" src="child-jq.html"></iframe>
+
+## Vanilla JS
+
+[Example](child-va.html):
 
 ```js:src/child-va.js
 ```
+
+<iframe width="100%" height="150" src="child-va.html"></iframe>

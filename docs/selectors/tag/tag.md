@@ -3,16 +3,24 @@
 
 # Selector `tag`
 
-| jQuery        | JS                           |
-|:-------------:|:----------------------------:|
-| `$('tag')`    | `querySelectorAll('tag')`    |
+| jQuery | JS |
+|:--:|:--:|
+| `$('tag')` | `querySelectorAll('tag')` |
 
-jQuery code ([live example](tag-jq.html)):
+## jQuery
+
+[Example](tag-jq.html):
 
 ```js:src/tag-jq.js
 ```
 
-Vanilla JavaScript code ([live example](tag-va.html)):
+<iframe width="100%" height="150" src="tag-jq.html"></iframe>
+
+## Vanilla JS
+
+[Example](tag-va.html):
 
 ```js:src/tag-va.js
 ```
+
+<iframe width="100%" height="150" src="tag-va.html"></iframe>

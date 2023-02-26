@@ -3,16 +3,24 @@
 
 # Selector `*` (All)
 
-| jQuery   | JS                      |
-|:--------:|:-----------------------:|
+| jQuery | JS |
+|:--:|:--:|
 | `$('*')` | `querySelectorAll('*')` |
 
-jQuery code ([live example](all-jq.html)):
+## jQuery
+
+[Example](all-jq.html):
 
 ```js:src/all-jq.js
 ```
 
-Vanilla JavaScript code ([live example](all-va.html)):
+<iframe width="100%" height="150" src="all-jq.html"></iframe>
+
+## Vanilla JS
+
+[Example](all-va.html):
 
 ```js:src/all-va.js
 ```
+
+<iframe width="100%" height="150" src="all-va.html"></iframe>

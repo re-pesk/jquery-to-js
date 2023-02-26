@@ -3,16 +3,24 @@
 
 # Selector `#id`
 
-| jQuery     | JS                     |
-|:----------:|:----------------------:|
+| jQuery | JS |
+|:--:|:--:|
 | `$('#id')` | `querySelector('#id')` |
 
-jQuery code ([live example](id-jq.html)):
+## jQuery
+
+[Example](id-jq.html):
 
 ```js:src/id-jq.js
 ```
 
-Vanilla JavaScript code ([live example](id-va.html)):
+<iframe width="100%" height="150" src="id-jq.html"></iframe>
+
+## Vanilla JS
+
+[Example](id-va.html):
 
 ```js:src/id-va.js
 ```
+
+<iframe width="100%" height="150" src="id-va.html"></iframe>

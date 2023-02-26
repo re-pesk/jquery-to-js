@@ -7,12 +7,20 @@
 |:--:|:--:|
 | `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` |
 
-jQuery code ([live example](multi-jq.html)):
+## jQuery
+
+[Example](multi-jq.html):
 
 ```js:src/multi-jq.js
 ```
 
-Vanilla JavaScript code ([live example](multi-va.html)):
+<iframe width="100%" height="150" src="multi-jq.html"></iframe>
+
+## Vanilla JS
+
+[Example](multi-va.html):
 
 ```js:src/multi-va.js
 ```
+
+<iframe width="100%" height="150" src="multi-va.html"></iframe>
