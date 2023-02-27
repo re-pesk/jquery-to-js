@@ -22,6 +22,7 @@
   <div id="content"></div>
   <script type="module">
     import 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
+    import 'https://cdn.jsdelivr.net/npm/marked-extended-tables@1.0.5/lib/index.umd.min.js';
 
     const q = (selector, context) => (context || document).querySelector(selector);
     const qq = (selector, context) => (context || document).querySelectorAll(selector);
@@ -137,6 +138,7 @@
     const regexp = new RegExp(`${mdview}\\?`);
     const fileToLoad = url.replace(regexp, '');
     const mdContent = await getContent(fileToLoad);
+    marked.use(self['extended-tables']());
     const htmlContent = marked.parse(mdContent, { gfm: true, xhtml: true });
     let processedContent = htmlContent.replaceAll(/(?<=href=)"[^"]*"/g, replacer);
     processedContent = processedContent.replaceAll(/(?<=src=)"[^"]*"/g, replacer);
