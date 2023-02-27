@@ -17,7 +17,7 @@
     splitedPath[splitedPath.length - 1] = '';
     const basePath = splitedPath.slice(1, baseNo + 1).join('/');
     const restPath = splitedPath.slice(baseNo + 1).join('/');
-    const last = splitedPath.at(-2) + `.md`;
+    const last = `index.md`;
     const search = `?${restPath}${last}`;
     const url = `${origin}/${basePath}/${mdview}${search}` 
     window.location.replace(url);

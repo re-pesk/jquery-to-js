@@ -79,7 +79,7 @@
       // If href string starts with '"?' string and ends with '/"' string, it is a default search string to certain directory.
       // Add 'target="_blank"' and return
       if (href.startsWith('"?') && href.endsWith('/"')) {
-        href = href.replace(/([^?/]+)\/(?=")/, '$1/$1.md');
+        href = href.replace(/([^?/]+)\/(?=")/, '$1/index.md');
         href = href.replace(/\.\//, '');
         return href;
       }
@@ -120,7 +120,7 @@
     const { origin, pathname } = window.location;
     const splitedPath = pathname.split('/');
     const basePath = splitedPath.slice(1, baseNo + 1).join('/');
-    const last = splitedPath.at(-2) + `.md`;
+    const last = `index.md`;
 
     const mdFileName = `?${last}`;
     let url = '';
@@ -129,9 +129,6 @@
     if (searchString) {
       prefix = splitPathName(searchString).path;
       url = window.location.toString();
-      if (searchString === last) {
-        url = `${origin}/${basePath}/${mdview}?main.md`;
-      }
     } else {
       url = `${window.location.toString()}${mdFileName}`;
     }
