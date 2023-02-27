@@ -8,6 +8,10 @@ Examples with jQuery code use <span style='color: red'>red</span> color, example
 
 [Selectors](?selectors/)
 
+## Methods
+
+[Methods](?methods/)
+
 ## Test
 
 [Test MD](?test/)
