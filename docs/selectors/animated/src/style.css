@@ -1,0 +1,15 @@
+div {
+  background: yellow;
+  border: 1px solid #AAA;
+  width: 80px;
+  height: 80px;
+  margin: 0 5px;
+  float: left;
+}
+div.colored {
+  background: green;
+}
+
+.transitional {
+  transition: all 1000ms ease-in-out;
+}
