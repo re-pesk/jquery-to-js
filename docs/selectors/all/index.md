@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # All Selector ('*')
 
 | jQuery | JS | Description |

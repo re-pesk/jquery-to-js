@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # Descendant selector ('ancestor descendant')
 
 | jQuery | JS | Description |

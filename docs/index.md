@@ -6,11 +6,11 @@ Examples with jQuery code use <span style='color: red'>red</span> color, example
 
 ## Selectors
 
-[Selectors](?selectors/)
+[Selectors' list](?selectors/)
 
 ## Methods
 
-[Methods](?methods/)
+[Methods' list](?methods/)
 
 ## Test
 

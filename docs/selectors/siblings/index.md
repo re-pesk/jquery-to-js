@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # Next Siblings Selector (`prev ~ siblings`)
 
 | jQuery | JS | Description |

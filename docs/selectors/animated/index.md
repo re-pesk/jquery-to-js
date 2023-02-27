@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # :animated Selector (':animated')
 
 | jQuery | JS | Description |

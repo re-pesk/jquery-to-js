@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # :header Selector (':header')
 
 | jQuery | JS | Description |

@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # Multiple selector ('selector1, selector2, selectorN')
 
 | jQuery | JS | Description |

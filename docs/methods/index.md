@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # Equivalents of jQuery methods in Vanilla JavaScript
 
 | **Methods** |||||

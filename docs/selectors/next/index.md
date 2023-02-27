@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # Next Adjacent Selector ('prev + next')
 
 | jQuery | JS | Description |

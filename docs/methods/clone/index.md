@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # Method $(selector).clone()
 
 | jQuery | JS | Description |
@@ -14,7 +11,7 @@
 ```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="jquery.html"></iframe>
+<iframe width="100%" height="100" src="jquery.html"></iframe>
 
 ## Vanilla JS
 
@@ -23,4 +20,4 @@
 ```js:src/vanilla.js
 ```
 
-<iframe width="100%" height="150" src="vanilla.html"></iframe>
+<iframe width="100%" height="100" src="vanilla.html"></iframe>

@@ -15,6 +15,14 @@
     body {
       padding: 0 10%;
     }
+    div.back {
+      position: sticky;
+      left: 10%;
+      top: 0;
+      height: 2rem;
+      background-color: white;
+      border-bottom: 1px solid gray;
+    }
   </style>
 </head>
 
@@ -136,10 +144,13 @@
     const fileToLoad = url.replace(regexp, '');
     const mdContent = await getContent(fileToLoad);
     marked.use(self['extended-tables']());
-    const htmlContent = marked.parse(mdContent, { gfm: true, xhtml: true });
-    let processedContent = htmlContent.replaceAll(/(?<=href=)"[^"]*"/g, replacer);
-    processedContent = processedContent.replaceAll(/(?<=src=)"[^"]*"/g, replacer);
-    q('#content').innerHTML = processedContent;
+    let htmlContent = marked.parse(mdContent, { gfm: true, xhtml: true });
+    if (prefix) {
+      htmlContent = `<div class="back"><a href="../">Back</a></div>${htmlContent}`;
+    }
+    htmlContent = htmlContent.replaceAll(/(?<=href=)"[^"]*"/g, replacer);
+    htmlContent = htmlContent.replaceAll(/(?<=src=)"[^"]*"/g, replacer);
+    q('#content').innerHTML = htmlContent;
     loadSrc('#content', prefix);
 
   </script>

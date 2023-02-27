@@ -1,6 +1,3 @@
-<!-- markdownlint-disable MD041-->
-[Return](../)
-
 # Child Selector ('parent > child')
 
 | jQuery | JS | Description |
