@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatic redirect</title>
+</head>
+
+<body>
+  <script>
+    const baseNo = 1;
+    const mdview = `mdview.html`;
+    const { origin, pathname } = window.location;
+    const splitedPath = pathname.split('/');
+    splitedPath[splitedPath.length - 1] = '';
+    const basePath = splitedPath.slice(1, baseNo + 1).join('/');
+    const restPath = splitedPath.slice(baseNo + 1).join('/');
+    const last = `index.md`;
+    const search = `?${restPath}${last}`;
+    const url = `${origin}/${basePath}/${mdview}${search}` 
+    window.location.replace(url);
+  </script>
+</body>
+
+</html>

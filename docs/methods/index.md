@@ -7,3 +7,4 @@
 | .prependTo() | `$(selector).prependTo(selector)` | **_Insert_** every element in the set of matched elements **_to the beginning of the target_**. | [More](?prependTo/) |
 | .children() | `$(selector).children(selector)` | Get the **_children_** of each element in the set of matched elements, optionally filtered by a selector. | [More](?children/) |
 | .remove() | `$(selector).remove(selector)` | **_Remove_** the set of matched elements from the DOM. | [More](?remove/) |
+| .end()  | `$(selector).end()` | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [More](?end/) |
