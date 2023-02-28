@@ -126,8 +126,8 @@
     const baseNo = 1;
     const mdview = 'mdview.html';
     const { origin, pathname } = window.location;
-    const splitedPath = pathname.split('/');
-    const basePath = splitedPath.slice(1, baseNo + 1).join('/');
+    const splittedPath = pathname.split('/');
+    const basePath = splittedPath.slice(1, baseNo + 1).join('/');
     const last = `index.md`;
 
     const mdFileName = `?${last}`;
