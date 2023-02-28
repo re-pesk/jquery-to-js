@@ -1,8 +1,8 @@
 # Method .end()
 
-| jQuery | JS | Description |
-|:--:|:--|:--|
-| `$(selector).aaa().end().bbb()` | `querySelectorAll(selector).forEach(element => {element.aaa(); element.bbb();})` | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--|:--|:--|
+| [.end()](https://api.jquery.com/end/) | `$(selector).aaa().end().bbb()` | `querySelectorAll(selector).forEach(element => {element.aaa(); element.bbb();})` | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. |
 
 ## jQuery
 

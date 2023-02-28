@@ -1,8 +1,8 @@
 # Element Selector ('element')
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$('element')` | `querySelectorAll('element')` | Selects all elements with the given **_tag name_**. |
+| API Refernce | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [element](https://api.jquery.com/element-selector/) | `$('element')` | `querySelectorAll('element')` | Selects all elements with the given **_tag name_**. |
 
 ## jQuery
 

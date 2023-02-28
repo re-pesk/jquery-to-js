@@ -1,8 +1,8 @@
-# Method $(selector).clone()
+# Method .clone()
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$(selector).clone()` | `querySelector(selector).cloneNode(true)` | Create a **_deep copy_** of the set of matched elements. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [.clone()](https://api.jquery.com/clone/) | `$(selector).clone()` | `querySelector(selector).cloneNode(true)` | Create a **_deep copy_** of the set of matched elements. |
 
 ## jQuery
 

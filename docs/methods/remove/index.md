@@ -1,8 +1,8 @@
-# Method $(selector).remove()
+# Method .remove()
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$(selector).remove(selector)` | `querySelectorAll("p").forEach(element => (element.textContent.includes('Hello') && element.remove()))` | **_Remove_** the set of matched elements from the DOM. |
+| Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [.remove()](https://api.jquery.com/remove/) | `$(selector).remove(selector)` | `querySelectorAll("p").forEach(element => (element.textContent.includes('Hello') && element.remove()))` | **_Remove_** the set of matched elements from the DOM. |
 
 ## jQuery
 

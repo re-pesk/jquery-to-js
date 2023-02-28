@@ -1,8 +1,8 @@
 # Multiple selector ('selector1, selector2, selectorN')
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` | Selects the **_combined results_** of all the specified selectors. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [selector1, selector2, ...](https://api.jquery.com/multiple-selector/) | `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` | Selects the **_combined results_** of all the specified selectors. |
 
 ## jQuery
 

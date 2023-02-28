@@ -1,8 +1,8 @@
 # :animated Selector (':animated')
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$(':animated')` | `querySelectorAll('.animated')` | Selects all elements that are **_in the progress of an animation_** at the time the selector is run. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [:animated](https://api.jquery.com/animated-selector/) | `$(':animated')` | `querySelectorAll('.animated')` | Selects all elements that are **_in the progress of an animation_** at the time the selector is run. |
 
 ## jQuery
 

@@ -1,8 +1,8 @@
 # Next Siblings Selector (`prev ~ siblings`)
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$('prev ~ siblings')` | `querySelectorAll('prev ~ siblings')` | Selects all **_sibling_** elements that follow after the "prev" element, have the same parent, and match the filtering "siblings" selector. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [prev ~ siblings](https://api.jquery.com/next-siblings-selector/) | `$('prev ~ siblings')` | `querySelectorAll('prev ~ siblings')` | Selects all **_sibling_** elements that follow after the "prev" element, have the same parent, and match the filtering "siblings" selector. |
 
 ## jQuery
 

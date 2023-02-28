@@ -1,8 +1,8 @@
 # Descendant selector ('ancestor descendant')
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$('ancestor descendant')` | `querySelectorAll('ancestor descendant')` | Selects all elements that are **_descendants_** of a given ancestor. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [ancestor descendant](https://api.jquery.com/descendant-selector/) | `$('ancestor descendant')` | `querySelectorAll('ancestor descendant')` | Selects all elements that are **_descendants_** of a given ancestor. |
 
 ## jQuery
 

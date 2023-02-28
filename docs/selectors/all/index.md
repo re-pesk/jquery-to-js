@@ -1,8 +1,8 @@
 # All Selector ('*')
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$('*')` | `querySelectorAll('*')` | Selects **_all_** elements. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [' * '](https://api.jquery.com/all-selector/) | `$('*')` | `querySelectorAll('*')` | Selects **_all_** elements. |
 
 ## jQuery
 

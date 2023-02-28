@@ -1,8 +1,8 @@
-# Method $(selector).clone()
+# Method .prependTo()
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$(selector).prependTo(selector)` | `querySelector(selector).prepend(querySelector(selector))` | **_Insert_** every element in the set of matched elements **_to the beginning of the target_**. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [.prependTo()](https://api.jquery.com/prependTo/) | `$(selector#1).prependTo(selector#2)` | `querySelector(selector#2).prepend(querySelector(selector#1))` | **_Insert_** every element in the set of matched elements **_to the beginning of the target_**. |
 
 ## jQuery
 

@@ -1,8 +1,8 @@
 # Next Adjacent Selector ('prev + next')
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$('prev + next')` | `querySelectorAll('prev + next')` | Selects all **_next_** elements matching "next" that are **_immediately preceded_** by a sibling "prev" |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [parent > child](https://api.jquery.com/child-selector/) | `$('prev + next')` | `querySelectorAll('prev + next')` | Selects all **_next_** elements matching "next" that are **_immediately preceded_** by a sibling "prev" |
 
 ## jQuery
 

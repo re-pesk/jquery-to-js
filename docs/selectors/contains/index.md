@@ -1,8 +1,8 @@
 # :contains() Selector (':contains(text)')
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$(':contains(text)')` | `querySelectorAll('*').filter(element => element.textContent.includes(text))` | Select all elements that contain the specified text. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [:contains()](https://api.jquery.com/contains-selector/) | `$(':contains(text)')` | `querySelectorAll('*').filter(element => element.textContent.includes(text))` | Select all elements that **_contain_** the specified text. |
 
 ## jQuery
 

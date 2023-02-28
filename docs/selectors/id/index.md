@@ -1,8 +1,8 @@
 # ID Selector ('#id')
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$('#id')` | `querySelector('#id')` | Selects a single element with the given **_id_** attribute. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [#id](https://api.jquery.com/id-selector/) | `$('#id')` | `querySelector('#id')` | Selects a single element with the given **_id_** attribute. |
 
 ## jQuery
 

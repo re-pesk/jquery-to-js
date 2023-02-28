@@ -1,8 +1,8 @@
 # Class Selector ('.class')
 
-| jQuery | JS | Description |
-|:--:|:--:|:--:|
-| `$('.class')` | `querySelectorAll('.class')` | Selects all elements with the given **_class_**. |
+| API Reference | jQuery | JS | Description |
+|:--:|:--:|:--:|:--:|
+| [.class](https://api.jquery.com/class-selector/) | `$('.class')` | `querySelectorAll('.class')` | Selects all elements with the given **_class_**. |
 
 ## jQuery
 
