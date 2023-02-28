@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# All Selector (`*`)
+# All Selector ('*')
 
 | jQuery | JS | Description |
 |:--:|:--:|:--:|
@@ -9,18 +9,18 @@
 
 ## jQuery
 
-[Example](all-jq.html):
+[Example](jquery.html):
 
-```js:src/all-jq.js
+```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="all-jq.html"></iframe>
+<iframe width="100%" height="150" src="jquery.html"></iframe>
 
 ## Vanilla JS
 
-[Example](all-va.html):
+[Example](vanilla.html):
 
-```js:src/all-va.js
+```js:src/vanilla.js
 ```
 
-<iframe width="100%" height="150" src="all-va.html"></iframe>
+<iframe width="100%" height="150" src="vanilla.html"></iframe>

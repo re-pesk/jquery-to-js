@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Child Selector (`parent > child`)
+# Child Selector ('parent > child')
 
 | jQuery | JS | Description |
 |:--:|:--:|:--:|
@@ -9,18 +9,18 @@
 
 ## jQuery
 
-[Example](child-jq.html):
+[Example](jquery.html):
 
-```js:src/child-jq.js
+```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="child-jq.html"></iframe>
+<iframe width="100%" height="150" src="jquery.html"></iframe>
 
 ## Vanilla JS
 
-[Example](child-va.html):
+[Example](vanilla.html):
 
-```js:src/child-va.js
+```js:src/vanilla.js
 ```
 
-<iframe width="100%" height="150" src="child-va.html"></iframe>
+<iframe width="100%" height="150" src="vanilla.html"></iframe>

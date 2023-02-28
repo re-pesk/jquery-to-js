@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Class Selector (`.class`)
+# Class Selector ('.class')
 
 | jQuery | JS | Description |
 |:--:|:--:|:--:|
@@ -9,18 +9,18 @@
 
 ## jQuery
 
-[Example](class-jq.html):
+[Example](jquery.html):
 
-```js:src/class-jq.js
+```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="class-jq.html"></iframe>
+<iframe width="100%" height="150" src="jquery.html"></iframe>
 
 ## Vanilla JS
 
-[Example](class-va.html):
+[Example](vanilla.html):
 
-```js:src/class-va.js
+```js:src/vanilla.js
 ```
 
-<iframe width="100%" height="150" src="class-va.html"></iframe>
+<iframe width="100%" height="150" src="vanilla.html"></iframe>

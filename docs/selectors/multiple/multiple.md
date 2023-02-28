@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Multiple selector (`selector1, selector2, selectorN`)
+# Multiple selector ('selector1, selector2, selectorN')
 
 | jQuery | JS | Description |
 |:--:|:--:|:--:|
@@ -9,18 +9,18 @@
 
 ## jQuery
 
-[Example](multi-jq.html):
+[Example](jquery.html):
 
-```js:src/multi-jq.js
+```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="multi-jq.html"></iframe>
+<iframe width="100%" height="150" src="jquery.html"></iframe>
 
 ## Vanilla JS
 
-[Example](multi-va.html):
+[Example](vanilla.html):
 
-```js:src/multi-va.js
+```js:src/vanilla.js
 ```
 
-<iframe width="100%" height="150" src="multi-va.html"></iframe>
+<iframe width="100%" height="150" src="vanilla.html"></iframe>

@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Descendant selector (`ancestor descendant`)
+# Descendant selector ('ancestor descendant')
 
 | jQuery | JS | Description |
 |:--:|:--:|:--:|
@@ -9,18 +9,18 @@
 
 ## jQuery
 
-[Example](desc-jq.html):
+[Example](jquery.html):
 
-```js:src/desc-jq.js
+```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="desc-jq.html"></iframe>
+<iframe width="100%" height="150" src="jquery.html"></iframe>
 
 ## Vanilla JS
 
-[Example](desc-va.html):
+[Example](vanilla.html):
 
-```js:src/desc-va.js
+```js:src/vanilla.js
 ```
 
-<iframe width="100%" height="150" src="desc-va.html"></iframe>
+<iframe width="100%" height="150" src="vanilla.html"></iframe>

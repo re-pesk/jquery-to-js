@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Next Adjacent Selector (`prev + next`)
+# Next Adjacent Selector ('prev + next')
 
 | jQuery | JS | Description |
 |:--:|:--:|:--:|
@@ -9,18 +9,18 @@
 
 ## jQuery
 
-[Example](next-jq.html):
+[Example](jquery.html):
 
-```js:src/next-jq.js
+```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="next-jq.html"></iframe>
+<iframe width="100%" height="150" src="jquery.html"></iframe>
 
 ## Vanilla JS
 
-[Example](next-va.html):
+[Example](vanilla.html):
 
-```js:src/next-va.js
+```js:src/vanilla.js
 ```
 
-<iframe width="100%" height="150" src="next-va.html"></iframe>
+<iframe width="100%" height="150" src="vanilla.html"></iframe>

@@ -12,16 +12,19 @@
 <body>
 
   <form>
-    <label for="name">Name:</label>
+    <div>Form is surrounded by the green border.</div>
+
+    <label for="name">Child of form:</label>
     <input name="name" id="name">
+
     <fieldset>
-      <label for="newsletter">Newsletter:</label>
+      <label for="newsletter">Grandchild of form, child of fieldset:</label>
       <input name="newsletter" id="newsletter">
     </fieldset>
   </form>
-  <input name="none">
+  Sibling to form: <input name="none">
 
-  <script type="module" src="./src/next-va.js"></script>
+  <script type="module" src="./src/vanilla.js"></script>
 
 </body>
 

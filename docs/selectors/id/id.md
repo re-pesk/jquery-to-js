@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# ID Selector (`#id`)
+# ID Selector ('#id')
 
 | jQuery | JS | Description |
 |:--:|:--:|:--:|
@@ -9,18 +9,18 @@
 
 ## jQuery
 
-[Example](id-jq.html):
+[Example](jquery.html):
 
-```js:src/id-jq.js
+```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="id-jq.html"></iframe>
+<iframe width="100%" height="150" src="jquery.html"></iframe>
 
 ## Vanilla JS
 
-[Example](id-va.html):
+[Example](vanilla.html):
 
-```js:src/id-va.js
+```js:src/vanilla.js
 ```
 
-<iframe width="100%" height="150" src="id-va.html"></iframe>
+<iframe width="100%" height="150" src="vanilla.html"></iframe>

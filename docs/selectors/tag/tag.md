@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 [Return](../)
 
-# Element Selector (`element`)
+# Element Selector ('element')
 
 | jQuery | JS | Description |
 |:--:|:--:|:--:|
@@ -9,18 +9,18 @@
 
 ## jQuery
 
-[Example](tag-jq.html):
+[Example](jquery.html):
 
-```js:src/tag-jq.js
+```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="tag-jq.html"></iframe>
+<iframe width="100%" height="150" src="jquery.html"></iframe>
 
 ## Vanilla JS
 
-[Example](tag-va.html):
+[Example](vanilla.html):
 
-```js:src/tag-va.js
+```js:src/vanilla.js
 ```
 
-<iframe width="100%" height="150" src="tag-va.html"></iframe>
+<iframe width="100%" height="150" src="vanilla.html"></iframe>
