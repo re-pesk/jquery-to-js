@@ -1,23 +1,40 @@
 # All Selector ('*')
 
-| API Reference | jQuery | JS | Description |
+| jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| [' * '](https://api.jquery.com/all-selector/) | `$('*')` | `querySelectorAll('*')` | Selects **_all_** elements. |
+| `$('*')` | `querySelectorAll('*')` | Selects **_all_** elements. | [api](https://api.jquery.com/all-selector/) |
 
-## jQuery
+## Markup (shared)
 
-[Example](jquery.html):
+```html:example.html
+```
+
+## Style (shared)
+
+```css:src/style.css
+```
+
+## Scripts
+
+### Helper (shared)
+
+```js:src/main.js
+```
+
+### jQuery
 
 ```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="jquery.html"></iframe>
+[Example](example.html?jquery):
 
-## Vanilla JS
+<iframe width="100%" height="130" src="example.html?jquery"></iframe>
 
-[Example](vanilla.html):
+### Pure JS
 
-```js:src/vanilla.js
+```js:src/pure.js
 ```
 
-<iframe width="100%" height="150" src="vanilla.html"></iframe>
+[Example](example.html?pure):
+
+<iframe width="100%" height="130" src="example.html?pure"></iframe>

@@ -1,23 +1,40 @@
 # Next Adjacent Selector ('prev + next')
 
-| API Reference | jQuery | JS | Description |
+| jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| [parent > child](https://api.jquery.com/child-selector/) | `$('prev + next')` | `querySelectorAll('prev + next')` | Selects all **_next_** elements matching "next" that are **_immediately preceded_** by a sibling "prev" |
+| `$('prev + next')` | `querySelectorAll('prev + next')` | Selects all **_next_** elements matching "next" that are **_immediately preceded_** by a sibling "prev" | [api](https://api.jquery.com/child-selector/) |
 
-## jQuery
+## Markup (shared)
 
-[Example](jquery.html):
+```html:example.html
+```
+
+## Style (shared)
+
+```css:src/style.css
+```
+
+## Scripts
+
+### Helper (shared)
+
+```js:src/main.js
+```
+
+### jQuery
 
 ```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="jquery.html"></iframe>
+[Example](example.html?jquery):
 
-## Vanilla JS
+<iframe width="100%" height="110" src="example.html?jquery"></iframe>
 
-[Example](vanilla.html):
+### Pure JS
 
-```js:src/vanilla.js
+```js:src/pure.js
 ```
 
-<iframe width="100%" height="150" src="vanilla.html"></iframe>
+[Example](example.html?pure):
+
+<iframe width="100%" height="110" src="example.html?pure"></iframe>

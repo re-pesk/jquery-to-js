@@ -1,0 +1,1 @@
+document.querySelector('#foo').prepend(document.querySelector('span'));

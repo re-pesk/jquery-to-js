@@ -15,6 +15,7 @@
     body {
       padding: 0 10%;
     }
+
     div.back {
       position: sticky;
       left: 10%;
@@ -35,20 +36,20 @@
     const q = (selector, context) => (context || document).querySelector(selector);
     const qq = (selector, context) => (context || document).querySelectorAll(selector);
 
-/*
-    Node.prototype.on = Node.prototype.addEventListener;
-    window.on = window.addEventListener;
-
-    // eslint-disable-next-line no-proto
-    NodeList.prototype.__proto__ = Array.prototype;
-
-    // eslint-disable-next-line no-multi-assign, func-names
-    NodeList.prototype.on = NodeList.prototype.addEventListener = function (name, fn) {
-      this.forEach((elem) => {
-        elem.on(name, fn);
-      });
-    }.bind(NodeList.prototype);
- */
+    /*
+        Node.prototype.on = Node.prototype.addEventListener;
+        window.on = window.addEventListener;
+    
+        // eslint-disable-next-line no-proto
+        NodeList.prototype.__proto__ = Array.prototype;
+    
+        // eslint-disable-next-line no-multi-assign, func-names
+        NodeList.prototype.on = NodeList.prototype.addEventListener = function (name, fn) {
+          this.forEach((elem) => {
+            elem.on(name, fn);
+          });
+        }.bind(NodeList.prototype);
+     */
     async function getContent(url) {
       return await fetch(url)
         .then(response => {
@@ -66,62 +67,65 @@
       return { path, fileName };
     }
 
-    function replacer(hrefArg) {
-      let href = hrefArg;
+    function replacer(str, attrName, urlArg) {
+      let url = urlArg;
 
-      // If href string starts with http(s), it is a link to external resource. Add 'target="_blank"' and return
-      if (href.startsWith(`"http`)) {
-        return `${href} target="_blank"`;
+      // If url string starts with http(s), it is a link to external resource. Add 'target="_blank"' and return
+      if (url.startsWith(`"http`)) {
+        return `${attrName}${url} target="_blank"`;
       }
 
-      // If prefix does not empty, insert it to beginning of href
-      if (prefix) {
-        href = href.replace(/(?<=")(\??)([^?"]*)(?=")/, `$1${prefix}/$2`);
+      // If prefix does not empty, insert it to beginning of url
+      if (prefix && !url.startsWith('"/')) {
+        url = url.replace(/(?<=")(\??)([^"]*)(?=")/, `$1${prefix}/$2`);
       }
 
-      // If href string has character sequence without '/' and '"'' characters, 
+      // If url string has character sequence without '/' and '"'' characters, 
       // followed by '/../' string, replace them all with './' string
-      if (href.includes('/../')) {
-        href = href.replace(/[^?"/]+\/\.\.\//g, './');
+      if (url.includes('/../')) {
+        url = url.replace(/[^?"/]+\/\.\.\//g, './');
       }
 
-      // If href string starts with '"?' string and ends with '/"' string, it is a default search string to certain directory.
+      // If url string starts with '"?' string and ends with '/"' string, it is a default search string to certain directory.
       // Add 'target="_blank"' and return
-      if (href.startsWith('"?') && href.endsWith('/"')) {
-        href = href.replace(/([^?/]+)\/(?=")/, '$1/index.md');
-        href = href.replace(/\.\//, '');
-        return href;
+      if (url.startsWith('"?') && url.endsWith('/"')) {
+        url = url.replace(/([^?/]+)\/(?=")/, '$1/index.md');
+        url = url.replace(/\.\//, '');
+        return `${attrName}${url}`;
       }
 
-      // If href string does not start with '?' and ends with '.hmtl', it is link to local page. Add 'target="_blank"' and return
-      if (href.charAt(1) !== '?' && href.endsWith('.html"')) {
-        return `${href} target="_blank"`;
+      // If url string does not start with '?' and ends with '.hmtl', it is link to local page. Add 'target="_blank"' and return
+      if (attrName === 'href=' && url.charAt(1) !== '?' && url.includes('.html')) {
+        return `${attrName}${url} target="_blank"`;
       }
 
-      return href;
+      return `${attrName}${url}`;
     }
 
     function loadSrc(contextStr, prefix) {
-      let context;
-      if (contextStr) {
-        context = q(contextStr);
+      if (!contextStr) {
+        throw new Error('Context name cannot be empty!');
       }
-      const codeTagList = qq('code[class^="language-js:"]', context);
-      codeTagList.forEach(element => {
-        const classList = element.classList.value.split(' ');
-        const classIndex = classList.findIndex(element => element.match(/^language-js\:/));
-        const oldClassName = classList[classIndex];
-        element.classList.replace(oldClassName, 'language-js');
+      const context = q(contextStr);
+      ['css', 'js', 'html'].forEach(langName => {
+        const langClassName = `language-${langName}`;
+        const codeTagList = qq(`code[class^="${langClassName}:"]`, context);
+        codeTagList.forEach(element => {
+          const classList = element.classList.value.split(' ');
+          const classIndex = classList.findIndex(element => element.match(new RegExp(`^${langClassName}\:`)));
+          const oldClassName = classList[classIndex];
+          element.classList.replace(oldClassName, langClassName);
 
-        const src = oldClassName.split(':')[1];
-        fetch(`${prefix}/${src}`)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
-            }
-            return response.text();
-          }).then((text) => (element.textContent = text));
-      });
+          const src = oldClassName.split(':')[1];
+          fetch(`${prefix}/${src}`)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+              }
+              return response.text();
+            }).then((text) => (element.textContent = text));
+        });
+      })
     }
 
     const baseNo = 1;
@@ -147,10 +151,10 @@
     marked.use(self['extended-tables']());
     let htmlContent = marked.parse(mdContent, { gfm: true, xhtml: true });
     if (prefix) {
-      htmlContent = `<div class="back"><a href="../">Back</a></div>${htmlContent}`;
+      htmlContent = `<div class="back"><a href="/${basePath}/">Home</a> | <a href="../">Up</a></div>${htmlContent}`;
     }
-    htmlContent = htmlContent.replaceAll(/(?<=href=)"[^"]*"/g, replacer);
-    htmlContent = htmlContent.replaceAll(/(?<=src=)"[^"]*"/g, replacer);
+    htmlContent = htmlContent.replaceAll(/(href=)("[^"]*")/g, replacer);
+    htmlContent = htmlContent.replaceAll(/(src=)("[^"]*")/g, replacer);
     q('#content').innerHTML = htmlContent;
     loadSrc('#content', prefix);
 

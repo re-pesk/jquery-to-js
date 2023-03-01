@@ -1,23 +1,35 @@
 # :contains() Selector (':contains(text)')
 
-| API Reference | jQuery | JS | Description |
+| jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| [:contains()](https://api.jquery.com/contains-selector/) | `$(':contains(text)')` | `querySelectorAll('*').filter(element => element.textContent.includes(text))` | Select all elements that **_contain_** the specified text. |
+| `$(':contains(text)')` | `querySelectorAll('*').filter(element => element.textContent.includes(text))` | Select all elements that **_contain_** the specified text. | [api](https://api.jquery.com/contains-selector/) |
 
-## jQuery
+## Markup (shared)
 
-[Example](jquery.html):
+```html:example.html
+```
+
+## Scripts
+
+### Helper (shared)
+
+```js:src/main.js
+```
+
+### jQuery
 
 ```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="jquery.html"></iframe>
+[Example](example.html?jquery):
 
-## Vanilla JS
+<iframe width="100%" height="100" src="example.html?jquery"></iframe>
 
-[Example](vanilla.html):
+### Pure JS
 
-```js:src/vanilla.js
+```js:src/pure.js
 ```
 
-<iframe width="100%" height="150" src="vanilla.html"></iframe>
+[Example](example.html?pure):
+
+<iframe width="100%" height="100" src="example.html?pure"></iframe>

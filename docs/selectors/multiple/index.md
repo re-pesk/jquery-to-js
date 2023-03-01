@@ -1,23 +1,40 @@
 # Multiple selector ('selector1, selector2, selectorN')
 
-| API Reference | jQuery | JS | Description |
+| jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| [selector1, selector2, ...](https://api.jquery.com/multiple-selector/) | `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` | Selects the **_combined results_** of all the specified selectors. |
+| `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` | Selects the **_combined results_** of all the specified selectors. | [api](https://api.jquery.com/multiple-selector/) |
 
-## jQuery
+## Markup (shared)
 
-[Example](jquery.html):
+```html:example.html
+```
+
+## Style (shared)
+
+```css:src/style.css
+```
+
+## Scripts
+
+### Helper (shared)
+
+```js:src/main.js
+```
+
+### jQuery
 
 ```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="jquery.html"></iframe>
+[Example](example.html?jquery):
 
-## Vanilla JS
+<iframe width="100%" height="100" src="example.html?jquery"></iframe>
 
-[Example](vanilla.html):
+### Pure JS
 
-```js:src/vanilla.js
+```js:src/pure.js
 ```
 
-<iframe width="100%" height="150" src="vanilla.html"></iframe>
+[Example](example.html?pure):
+
+<iframe width="100%" height="100" src="example.html?pure"></iframe>

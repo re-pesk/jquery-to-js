@@ -1,23 +1,40 @@
 # ID Selector ('#id')
 
-| API Reference | jQuery | JS | Description |
+| jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| [#id](https://api.jquery.com/id-selector/) | `$('#id')` | `querySelector('#id')` | Selects a single element with the given **_id_** attribute. |
+| `$('#id')` | `querySelector('#id')` | Selects a single element with the given **_id_** attribute. | [api](https://api.jquery.com/id-selector/) |
 
-## jQuery
+## Markup (shared)
 
-[Example](jquery.html):
+```html:example.html
+```
+
+## Style (shared)
+
+```css:src/style.css
+```
+
+## Scripts
+
+### Helper (shared)
+
+```js:src/main.js
+```
+
+### jQuery
 
 ```js:src/jquery.js
 ```
 
-<iframe width="100%" height="150" src="jquery.html"></iframe>
+[Example](example.html?jquery):
 
-## Vanilla JS
+<iframe width="100%" height="140" src="example.html?jquery"></iframe>
 
-[Example](vanilla.html):
+### Pure JS
 
-```js:src/vanilla.js
+```js:src/pure.js
 ```
 
-<iframe width="100%" height="150" src="vanilla.html"></iframe>
+[Example](example.html?pure):
+
+<iframe width="100%" height="140" src="example.html?pure"></iframe>
