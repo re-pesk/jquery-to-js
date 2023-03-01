@@ -45,6 +45,8 @@ tr td:nth-child(2) { width: 60rem; }
 | DOM Insertion, Inside |||
 |--|--|--|
 | [.prependTo()](?manipulation/prependTo/) | **_Insert_** every element in the set of matched elements **_to the beginning of the target_**. | [api](https://api.jquery.com/prependTo/) |
+| [.text()](?manipulation/text/) | **_Get_** the combined **_text contents_** of each element in the set of matched elements, including their descendants. | [api](https://api.jquery.com/text/) |
+| ^| **_Set_** the content of each element in the set of matched elements to the specified **_text_**. | ^|
 
 | DOM Removal |||
 |--|--|--|
