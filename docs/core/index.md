@@ -11,4 +11,5 @@ tr td:nth-child(3) { width: 45rem; }
 
 | Utilities ||||
 |:--|:--|:--|:--:|
+| [$.grep()](?grep/) | `$.grep(text)` | **_Finds the elements of an array_** which satisfy a filter function. The original array is not affected. | [API doc](https://api.jquery.com/jQuery.grep/) |
 | [$.trim()](?trim/) | `$.trim(text)` | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
