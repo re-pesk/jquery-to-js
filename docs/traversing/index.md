@@ -4,15 +4,14 @@ Equivalents of jQuery methods in Vanilla JavaScript
 
 <style>
 th { text-align: left; font-style: italic; }
-tr td:nth-child(1) { width: 10rem; }
-tr td:nth-child(2) { width: 15rem; }
-tr td:nth-child(3) { width: 45rem; }
+tr td:nth-child(1) { width: 20rem; }
+tr td:nth-child(2) { width: 60rem; }
 </style>
 
-| Miscellaneous Traversing ||||
-|:--|:--|:--|:--:|
-| [.end()](?end/)  | `$(selector).end()` | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [API doc](https://api.jquery.com/end/) |
+| Miscellaneous Traversing |||
+|:--|:--|:--:|
+| [$(...).end()](?end/) | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [API doc](https://api.jquery.com/end/) |
 
-| Tree Traversal ||||
-|:--|:--|:--|:--:|
-| [.children()](?children/) | `$(selector).children(selector)` | Get the **_children_** of each element in the set of matched elements, optionally filtered by a selector. | [API doc](https://api.jquery.com/children/) |
+| Tree Traversal |||
+|:--|:--|:--:|
+| [$(...).children(selector?)](?children/) | Get the **_children_** of each element in the set of matched elements, optionally filtered by a selector. | [API doc](https://api.jquery.com/children/) |
