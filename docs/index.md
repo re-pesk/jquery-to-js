@@ -66,8 +66,9 @@ tr td:nth-child(2) { width: 60rem; }
 
 | Utilities |||
 |--|--|--|
-| [.trim()](?core/trim/) | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
-
+| [$.grep()](?grep/) | **_Finds the elements of an array_** which satisfy a filter function. The original array is not affected. | [API doc](https://api.jquery.com/jQuery.grep/) |
+| [$.inArray()](?core/inarray/) | **_Search for a specified value_** within an array and return its index (or -1 if not found). | [API doc](https://api.jquery.com/jQuery.inArray/) |
+| [$.trim()](?core/trim/) | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
 ----
 
 ## Misc
