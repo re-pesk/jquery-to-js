@@ -5,21 +5,20 @@
 |:--:|:--:|:--:|:--:|
 | `$(selector).remove(selector)` | `querySelectorAll("p").forEach(element => (element.textContent.includes('Hello') && element.remove()))` | **_Remove_** the set of matched elements from the DOM. | [API doc](https://api.jquery.com/remove/) |
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
-## Style (shared)
+## Style
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery
@@ -29,7 +28,7 @@
 
 [Example](example.html?jquery):
 
-<iframe width="100%" height="110" src="example.html?jquery"></iframe>
+<iframe width="100%" height="120" src="example.html?jquery"></iframe>
 
 ### Pure JS
 
@@ -38,4 +37,4 @@
 
 [Example](example.html?pure):
 
-<iframe width="100%" height="110" src="example.html?pure"></iframe>
+<iframe width="100%" height="120" src="example.html?pure"></iframe>

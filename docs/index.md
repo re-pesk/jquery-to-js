@@ -66,6 +66,8 @@ tr td:nth-child(2) { width: 60rem; }
 
 ## Misc
 
+* [Common parts of examples](?example/)
+
 * [jQuery API Reference](https://api.jquery.com)
 
 * [Cheat sheet](https://oscarotero.com/jquery/) by Óscar Otero

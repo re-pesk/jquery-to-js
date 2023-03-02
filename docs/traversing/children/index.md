@@ -4,21 +4,20 @@
 |:--:|:--:|:--:|:--:|
 | `$(selector).children(selector)` | `Array.from(querySelector(selector).children)` | Get the **_children_** of each element in the set of matched elements, optionally filtered by a selector. | [API doc](https://api.jquery.com/children/) |
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
-## Style (shared)
+## Style
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery

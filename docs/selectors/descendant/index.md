@@ -4,21 +4,20 @@
 |:--:|:--:|:--:|:--:|
 | `$('ancestor descendant')` | `querySelectorAll('ancestor descendant')` | Selects all elements that are **_descendants_** of a given ancestor. | [API doc](https://api.jquery.com/descendant-selector/) |
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
-## Style (shared)
+## Style
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery

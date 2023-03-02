@@ -5,21 +5,20 @@
 | `$(selector).aaa().end().bbb()` | `querySelectorAll(selector).forEach(element => { element.aaa();` |  **_End_** the most recent **_filtering operation_**in the current chain<br />and **_return_** the set of matched elements **_to its previous state_**. | [API doc](https://api.jquery.com/end/) |
 | ^| `element.bbb(); })` | ^| ^|
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
-## Style (shared)
+## Style
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery

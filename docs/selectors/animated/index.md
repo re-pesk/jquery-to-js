@@ -4,21 +4,20 @@
 |:--:|:--:|:--:|:--:|
 | `$(':animated')` | `querySelectorAll('.animated')` | Selects all elements that are **_in the progress of an animation_** at the time the selector is run. | [API doc](https://api.jquery.com/animated-selector/) |
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
-## Style (shared)
+## Style
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery

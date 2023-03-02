@@ -4,16 +4,15 @@
 |:--:|:--:|:--:|:--:|
 | `$(':contains(text)')` | `querySelectorAll('*').filter(element => element.textContent.includes(text))` | Select all elements that **_contain_** the specified text. | [API doc](https://api.jquery.com/contains-selector/) |
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery

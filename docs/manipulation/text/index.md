@@ -5,21 +5,20 @@
 | `$(selector).text()` | `... = querySelector(selector).textContent` | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [API doc](https://api.jquery.com/text/) |
 | `$(selector).text(text\|function)` | `querySelector(selector).textContent` = ... |  Set the content of each element in the set of matched elements to the specified text. | ^|
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
-## Style (shared)
+## Style
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery

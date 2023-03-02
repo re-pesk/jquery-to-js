@@ -4,21 +4,20 @@
 |:--:|:--:|:--:|:--:|
 | `$(selector).clone()` | `querySelector(selector).cloneNode(true)` | Create a **_deep copy_** of the set of matched elements. | [API doc](https://api.jquery.com/clone/) |
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
-## Style (shared)
+## Style
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery

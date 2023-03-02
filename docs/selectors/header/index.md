@@ -4,16 +4,15 @@
 |:--:|:--:|:--:|:--:|
 | `$(':header')` | `querySelectorAll('h, h2, h3, h4, h5, h6')` | Selects all elements that are **_headers_**, like h1, h2, h3 and so on. | [API doc](https://api.jquery.com/header-selector/) |
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery

@@ -4,21 +4,20 @@
 |:--:|:--:|:--:|:--:|
 | `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` | Selects the **_combined results_** of all the specified selectors. | [API doc](https://api.jquery.com/multiple-selector/) |
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
-## Style (shared)
+## Style
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery

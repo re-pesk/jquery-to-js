@@ -4,21 +4,20 @@
 |:--:|:--:|:--:|:--:|
 | `$(selector#1).prependTo(selector#2)` | `querySelector(selector#2).prepend(querySelector(selector#1))` | **_Insert_** every element in the set of matched elements **_to the beginning of the target_**. | [API doc](https://api.jquery.com/prependTo/) |
 
-## Markup (shared)
+## Common parts (shared)
 
-```html:example.html
-```
+[Common parts](/docs/mdview.html?example/index.md)
 
-## Style (shared)
+## Style
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Helper (shared)
+### Prepare
 
-```js:src/main.js
+```js:src/prepare.js
 ```
 
 ### jQuery
@@ -28,13 +27,13 @@
 
 [Example](example.html?jquery):
 
-<iframe width="100%" height="50" src="example.html?jquery"></iframe>
+<iframe width="100%" height="80" src="example.html?jquery"></iframe>
 
-## Pure JS
+### Pure JS
 
 ```js:src/pure.js
 ```
 
 [Example](example.html?pure):
 
-<iframe width="100%" height="50" src="example.html?pure"></iframe>
+<iframe width="100%" height="80" src="example.html?pure"></iframe>
