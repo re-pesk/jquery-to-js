@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$(selector).clone()` | `querySelector(selector).cloneNode(true)` | Create a **_deep copy_** of the set of matched elements. | [api](https://api.jquery.com/clone/) |
+| `$(selector).clone()` | `querySelector(selector).cloneNode(true)` | Create a **_deep copy_** of the set of matched elements. | [API doc](https://api.jquery.com/clone/) |
 
 ## Markup (shared)
 

@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--|:--|:--|:--:|
-| `$(selector).text()` | `... = querySelector(selector).textContent` | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [api](https://api.jquery.com/text/) |
+| `$(selector).text()` | `... = querySelector(selector).textContent` | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [API doc](https://api.jquery.com/text/) |
 | `$(selector).text(text\|function)` | `querySelector(selector).textContent` = ... |  Set the content of each element in the set of matched elements to the specified text. | ^|
 
 ## Markup (shared)

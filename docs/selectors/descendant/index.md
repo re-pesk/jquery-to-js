@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$('ancestor descendant')` | `querySelectorAll('ancestor descendant')` | Selects all elements that are **_descendants_** of a given ancestor. | [api](https://api.jquery.com/descendant-selector/) |
+| `$('ancestor descendant')` | `querySelectorAll('ancestor descendant')` | Selects all elements that are **_descendants_** of a given ancestor. | [API doc](https://api.jquery.com/descendant-selector/) |
 
 ## Markup (shared)
 

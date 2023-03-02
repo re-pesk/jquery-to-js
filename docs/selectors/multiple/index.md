@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` | Selects the **_combined results_** of all the specified selectors. | [api](https://api.jquery.com/multiple-selector/) |
+| `$('selector1, selector2, selectorN')` | `querySelectorAll('selector1, selector2, selectorN')` | Selects the **_combined results_** of all the specified selectors. | [API doc](https://api.jquery.com/multiple-selector/) |
 
 ## Markup (shared)
 

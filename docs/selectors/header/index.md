@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$(':header')` | `querySelectorAll('h, h2, h3, h4, h5, h6')` | Selects all elements that are **_headers_**, like h1, h2, h3 and so on. | [api](https://api.jquery.com/header-selector/) |
+| `$(':header')` | `querySelectorAll('h, h2, h3, h4, h5, h6')` | Selects all elements that are **_headers_**, like h1, h2, h3 and so on. | [API doc](https://api.jquery.com/header-selector/) |
 
 ## Markup (shared)
 

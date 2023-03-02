@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$('prev + next')` | `querySelectorAll('prev + next')` | Selects all **_next_** elements matching "next" that are **_immediately preceded_** by a sibling "prev" | [api](https://api.jquery.com/child-selector/) |
+| `$('prev + next')` | `querySelectorAll('prev + next')` | Selects all **_next_** elements matching "next" that are **_immediately preceded_** by a sibling "prev" | [API doc](https://api.jquery.com/child-selector/) |
 
 ## Markup (shared)
 

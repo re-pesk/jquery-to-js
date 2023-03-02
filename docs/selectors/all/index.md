@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$('*')` | `querySelectorAll('*')` | Selects **_all_** elements. | [api](https://api.jquery.com/all-selector/) |
+| `$('*')` | `querySelectorAll('*')` | Selects **_all_** elements. | [API doc](https://api.jquery.com/all-selector/) |
 
 ## Markup (shared)
 

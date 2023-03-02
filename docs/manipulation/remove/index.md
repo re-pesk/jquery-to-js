@@ -3,7 +3,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$(selector).remove(selector)` | `querySelectorAll("p").forEach(element => (element.textContent.includes('Hello') && element.remove()))` | **_Remove_** the set of matched elements from the DOM. | [api](https://api.jquery.com/remove/) |
+| `$(selector).remove(selector)` | `querySelectorAll("p").forEach(element => (element.textContent.includes('Hello') && element.remove()))` | **_Remove_** the set of matched elements from the DOM. | [API doc](https://api.jquery.com/remove/) |
 
 ## Markup (shared)
 

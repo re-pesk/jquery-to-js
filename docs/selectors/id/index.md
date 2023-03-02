@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$('#id')` | `querySelector('#id')` | Selects a single element with the given **_id_** attribute. | [api](https://api.jquery.com/id-selector/) |
+| `$('#id')` | `querySelector('#id')` | Selects a single element with the given **_id_** attribute. | [API doc](https://api.jquery.com/id-selector/) |
 
 ## Markup (shared)
 

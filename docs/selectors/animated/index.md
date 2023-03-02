@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$(':animated')` | `querySelectorAll('.animated')` | Selects all elements that are **_in the progress of an animation_** at the time the selector is run. | [api](https://api.jquery.com/animated-selector/) |
+| `$(':animated')` | `querySelectorAll('.animated')` | Selects all elements that are **_in the progress of an animation_** at the time the selector is run. | [API doc](https://api.jquery.com/animated-selector/) |
 
 ## Markup (shared)
 

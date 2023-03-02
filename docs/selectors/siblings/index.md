@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$('prev ~ siblings')` | `querySelectorAll('prev ~ siblings')` | Selects all **_sibling_** elements that follow after the "prev" element, have the same parent, and match the filtering "siblings" selector. | [api](https://api.jquery.com/next-siblings-selector/) |
+| `$('prev ~ siblings')` | `querySelectorAll('prev ~ siblings')` | Selects all **_sibling_** elements that follow after the "prev" element, have the same parent, and match the filtering "siblings" selector. | [API doc](https://api.jquery.com/next-siblings-selector/) |
 
 ## Markup (shared)
 

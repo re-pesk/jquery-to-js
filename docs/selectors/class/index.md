@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$('.class')` | `querySelectorAll('.class')` | Selects all elements with the given **_class_**. | [api](https://api.jquery.com/class-selector/) |
+| `$('.class')` | `querySelectorAll('.class')` | Selects all elements with the given **_class_**. | [API doc](https://api.jquery.com/class-selector/) |
 
 ## Markup (shared)
 

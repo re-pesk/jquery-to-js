@@ -11,14 +11,14 @@ tr td:nth-child(3) { width: 40rem; }
 
 | Copying ||||
 |:--|:--|:--|:--:|
-| [.clone()](?clone/) | `$(selector).clone()` | Create a **_deep copy_** of the set of matched elements. | [api](https://api.jquery.com/clone/) |
+| [.clone()](?clone/) | `$(selector).clone()` | Create a **_deep copy_** of the set of matched elements. | [API doc](https://api.jquery.com/clone/) |
 
 | DOM Insertion, Inside ||||
 |:--|:--|:--|:--:|
-| [.prependTo()](?prependTo/) | `$(selector).prependTo(selector)` | **_Insert_** every element in the set of matched elements **_to the beginning of the target_**. | [api](https://api.jquery.com/prependTo/) |
-| [.text()](?text/) | `$(selector).text()` | Get the combined text contents of each element in the set of matched elements, including their descendants. | [api](https://api.jquery.com/text/) |
+| [.prependTo()](?prependTo/) | `$(selector).prependTo(selector)` | **_Insert_** every element in the set of matched elements **_to the beginning of the target_**. | [API doc](https://api.jquery.com/prependTo/) |
+| [.text()](?text/) | `$(selector).text()` | Get the combined text contents of each element in the set of matched elements, including their descendants. | [API doc](https://api.jquery.com/text/) |
 | ^| `$(selector).text(text\|function)` | Set the content of each element in the set of matched elements to the specified text. | ^|
 
 | DOM Removal ||||
 |:--|:--|:--|:--:|
-| [.remove()](?remove/) | `$(selector).remove(selector)` | **_Remove_** the set of matched elements from the DOM. | [api](https://api.jquery.com/remove/) |
+| [.remove()](?remove/) | `$(selector).remove(selector)` | **_Remove_** the set of matched elements from the DOM. | [API doc](https://api.jquery.com/remove/) |

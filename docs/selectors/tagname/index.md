@@ -2,7 +2,7 @@
 
 | jQuery | JS | Description | API Refernce |
 |:--:|:--:|:--:|:--:|
-| `$('tagName')` | `querySelectorAll('tagName')` | Selects all elements with the given **_tag name_**. | [api](https://api.jquery.com/element-selector/) |
+| `$('tagName')` | `querySelectorAll('tagName')` | Selects all elements with the given **_tag name_**. | [API doc](https://api.jquery.com/element-selector/) |
 
 ## Markup (shared)
 
