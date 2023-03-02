@@ -62,6 +62,12 @@ tr td:nth-child(2) { width: 60rem; }
 |--|--|--|
 | [.children()](?traversing/children/) | Get the **_children_** of each element in the set of matched elements, optionally filtered by a selector. | [API doc](https://api.jquery.com/children/) |
 
+### [Core](?core/)
+
+| Utilities |||
+|--|--|--|
+| [.trim()](?core/trim/) | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
+
 ----
 
 ## Misc
