@@ -56,6 +56,7 @@ tr td:nth-child(2) { width: 60rem; }
 
 | Miscellaneous Traversing |||
 |:--|:--|:--:|
+| [$(...).each((index, element?) => {...})](?traversing/each/) | **_Iterate_** over a jQuery object, **_executing a function_** for each matched element. | [API doc](https://api.jquery.com/each/) |
 | [$(...).end()](?traversing/end/) | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [API doc](https://api.jquery.com/end/) |
 
 | Tree Traversal |||
@@ -66,7 +67,8 @@ tr td:nth-child(2) { width: 60rem; }
 
 | Utilities |||
 |--|--|--|
-| [$.grep(aray, (element?, index?) => {...}, invert?)](?core/grep/) | **_Finds the elements of an array_** which satisfy a filter function. The original array is not affected. | [API doc](https://api.jquery.com/jQuery.grep/) |
+| [$.each(aray \| object, (index \| name, value) => {...})](?core/each/) | A generic **_iterator function_**, which can be used to seamlessly iterate **_over both objects and arrays_**. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties. | [API doc](https://api.jquery.com/jQuery.each/) |
+| [$.grep(aray, (value, index?) => {...}, invert?)](?core/grep/) | **_Finds the elements of an array_** which satisfy a filter function. The original array is not affected. | [API doc](https://api.jquery.com/jQuery.grep/) |
 | [$.inArray(value, array, fromIndex?)](?core/inarray/) | **_Search for a specified value_** within an array and return its index (or -1 if not found). | [API doc](https://api.jquery.com/jQuery.inArray/) |
 | [$.trim(text)](?core/trim/) | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
 ----

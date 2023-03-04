@@ -10,6 +10,7 @@ tr td:nth-child(2) { width: 60rem; }
 
 | Miscellaneous Traversing |||
 |:--|:--|:--:|
+| [$(...).each((index, element?) => {...})](?each/) | **_Iterate_** over a jQuery object, **_executing a function_** for each matched element. | [API doc](https://api.jquery.com/each/) |
 | [$(...).end()](?end/) | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [API doc](https://api.jquery.com/end/) |
 
 | Tree Traversal |||
