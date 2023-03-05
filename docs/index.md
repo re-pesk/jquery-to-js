@@ -42,6 +42,12 @@ tr td:nth-child(2) { width: 60rem; }
 |:--|:--|:--:|
 | [$(...).clone()](?manipulation/clone/) | Create a **_deep copy_** of the set of matched elements. | [API doc](https://api.jquery.com/clone/) |
 
+| DOM Insertion, Around |||
+|:--|:--|:--:|
+| [$(...).wrap(wrappingElement \| function)](?manipulation/wrap/) | Wrap an HTML structure **_around each element_** in the set of matched elements. | [API doc](https://api.jquery.com/wrap/) |
+| [$(...).wrapAll(wrappingElement \| function)](?manipulation/wrapall/) | Wrap an HTML structure **_around all elements_** in the set of matched elements. | [API doc](https://api.jquery.com/wrapAll/) |
+| [$(...).wrapInner(wrappingElement \| function)](?manipulation/wrapinner/) | Wrap an HTML structure **_around the content of each element_** in the set of matched elements. | [API doc](https://api.jquery.com/wrapInner/) |
+
 | DOM Insertion, Inside |||
 |:--|:--|:--:|
 | [$(...).prependTo(selector \| object)](?manipulation/prependTo/) | **_Insert_** every element in the set of matched elements **_to the beginning of the target_**. | [API doc](https://api.jquery.com/prependTo/) |
