@@ -8,6 +8,9 @@ Examples with jQuery code use <span style='color: red'>red</span> color, example
 th { text-align: left; font-style: italic; }
 tr td:nth-child(1) { width: 25rem; }
 tr td:nth-child(2) { width: 60rem; }
+td {
+  vertical-align: top;
+}
 </style>
 
 | Basics |||

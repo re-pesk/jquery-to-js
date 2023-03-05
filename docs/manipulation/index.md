@@ -6,6 +6,9 @@ Equivalents of jQuery methods in Vanilla JavaScript
 th { text-align: left; font-style: italic; }
 tr td:nth-child(1) { width: 20rem; }
 tr td:nth-child(2) { width: 60rem; }
+td {
+  vertical-align: top;
+}
 </style>
 
 | Copying |||
