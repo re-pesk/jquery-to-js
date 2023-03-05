@@ -72,7 +72,8 @@ tr td:nth-child(2) { width: 60rem; }
 
 | Tree Traversal |||
 |:--|:--|:--:|
-| [$(...).children(selector?)](?traversing/children/) | Get the **_children_** of each element in the set of matched elements, optionally filtered by a selector. | [API doc](https://api.jquery.com/children/) |
+| [$(...).children(selector?)](?traversing/children/) | Get the **_children of each element_** in the set of matched elements, optionally filtered by a selector. | [API doc](https://api.jquery.com/children/) |
+| [$(...).find(selector)](?traversing/find/) | Get the **_descendants of each element_** in the current set of matched elements, filtered by a selector, jQuery object, or element. | [API doc](https://api.jquery.com/find/) |
 
 ### [Core](?core/)
 
