@@ -1,8 +1,14 @@
 # Method $.trim()
 
+<style>
+td {
+  vertical-align: top;
+}
+</style>
+
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$.trim(text)` | `text.trim()` | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
+| $.trim(text) | text.trim() | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
 
 ## Common parts (shared)
 
@@ -10,12 +16,12 @@
 
 ## Scripts
 
-### Prepare
+### prepare.js
 
 ```js:src/prepare.js
 ```
 
-### jQuery
+### jquery.js
 
 ```js:src/jquery.js
 ```
@@ -24,7 +30,7 @@
 
 <iframe width="100%" height="80" src="example.html?jquery"></iframe>
 
-### Pure JS
+### pure.js
 
 ```js:src/pure.js
 ```

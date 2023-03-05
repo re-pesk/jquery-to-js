@@ -1,8 +1,14 @@
 # :contains() Selector (':contains(text)')
 
+<style>
+td {
+  vertical-align: top;
+}
+</style>
+
 | jQuery | JS | Description | API Reference |
 |:--:|:--:|:--:|:--:|
-| `$(':contains(text)')` | `querySelectorAll('*').filter(element => element.textContent.includes(text))` | Select all elements that **_contain_** the specified text. | [API doc](https://api.jquery.com/contains-selector/) |
+| $(':contains(text)') | querySelectorAll('*').filter(element => element.textContent.includes(text)) | Select all elements that **_contain_** the specified text. | [API doc](https://api.jquery.com/contains-selector/) |
 
 ## Common parts (shared)
 
@@ -10,12 +16,12 @@
 
 ## Scripts
 
-### Prepare
+### prepare.js
 
 ```js:src/prepare.js
 ```
 
-### jQuery
+### jquery.js
 
 ```js:src/jquery.js
 ```
@@ -24,7 +30,7 @@
 
 <iframe width="100%" height="100" src="example.html?jquery"></iframe>
 
-### Pure JS
+### pure.js
 
 ```js:src/pure.js
 ```

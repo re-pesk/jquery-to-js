@@ -5,11 +5,14 @@ th { text-align: left; font-style: italic; }
 tr td:nth-child(1) { width: 30rem; }
 tr td:nth-child(2) { width: 30rem; }
 tr td:nth-child(3) { width: 60rem; }
+td {
+  vertical-align: top;
+}
 </style>
 
 | jQuery | JS | Description | API Reference |
 |:--|:--|:--|:--:|
-| `$.contains(container, contained)` | `container.contains(contained)` | **_Check_** to see **_if a DOM element is a descendant_** of another DOM element. | [API doc](https://api.jquery.com/jQuery.contains/) |
+| $.contains(container, contained) | container.contains(contained) | **_Check_** to see **_if a DOM element is a descendant_** of another DOM element. | [API doc](https://api.jquery.com/jQuery.contains/) |
 
 ## Common parts (shared)
 
@@ -17,12 +20,12 @@ tr td:nth-child(3) { width: 60rem; }
 
 ## Scripts
 
-### Prepare
+### prepare.js
 
 ```js:src/prepare.js
 ```
 
-### jQuery
+### jquery.js
 
 ```js:src/jquery.js
 ```
@@ -31,7 +34,7 @@ tr td:nth-child(3) { width: 60rem; }
 
 <iframe width="100%" height="80" src="example.html?jquery"></iframe>
 
-### Pure JS
+### pure.js
 
 ```js:src/pure.js
 ```

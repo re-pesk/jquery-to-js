@@ -2,25 +2,25 @@
 
 | jQuery | JS | Description | API Refernce |
 |:--:|:--:|:--:|:--:|
-| `$('tagName')` | `querySelectorAll('tagName')` | Selects all elements with the given **_tag name_**. | [API doc](https://api.jquery.com/element-selector/) |
+| $('tagName') | querySelectorAll('tagName') | Selects all elements with the given **_tag name_**. | [API doc](https://api.jquery.com/element-selector/) |
 
 ## Common parts (shared)
 
 [Common parts](/docs/mdview.html?example/index.md)
 
-## Style
+## style.css
 
 ```css:src/style.css
 ```
 
 ## Scripts
 
-### Prepare
+### prepare.js
 
 ```js:src/prepare.js
 ```
 
-### jQuery
+### jquery.js
 
 ```js:src/jquery.js
 ```
@@ -29,7 +29,7 @@
 
 <iframe width="100%" height="130" src="example.html?jquery"></iframe>
 
-### Pure JS
+### pure.js
 
 ```js:src/pure.js
 ```
