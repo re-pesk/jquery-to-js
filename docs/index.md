@@ -54,6 +54,10 @@ tr td:nth-child(2) { width: 60rem; }
 
 ### [Traversing](?traversing/)
 
+| Filtering |||
+|:--|:--|:--:|
+| [$(...).filter()](?traversing/filter/) | **_Reduce the set of matched elements_** to those that match the selector or pass the function's test. | [API doc](https://api.jquery.com/filter/) |
+
 | Miscellaneous Traversing |||
 |:--|:--|:--:|
 | [$(...).contents()](?traversing/contents/) | Get the **_children_** of each element in the set of matched elements, **_including text and comment nodes_**. | [API doc](https://api.jquery.com/contents/) |

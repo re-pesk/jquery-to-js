@@ -1,11 +1,11 @@
 # Common parts of examples
 
-## Markup
+## Markup (example.html)
 
 ```html:example.html
 ```
 
-## Script
+## Script (main.js)
 
 ```js:src/main.js
 ```
