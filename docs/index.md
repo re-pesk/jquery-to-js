@@ -39,6 +39,13 @@ td {
 
 ## Methods
 
+### [Attributes / CSS](?attributes/)
+
+| Attributes |||
+|:--|:--|:--:|
+| [$(...).attr(name)](?attributes/attr/) | **_Get the value of an attribute for the first element_** in the set of matched elements. | [API doc](https://api.jquery.com/attr/) |
+| [$(...).attr(name, value)<br />$(...).attr({name: value, ...})](?attributes/attr/) | **_Set one or more attributes for the set_** of matched elements. | ^|
+
 ### [Manipulation](?manipulation/)
 
 | Copying |||
