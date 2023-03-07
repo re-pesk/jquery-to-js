@@ -1,0 +1,10 @@
+div {
+  background: white;
+}
+.yellow {
+  background: yellow;
+}
+.yellow.green {
+  background: green;
+  color: white;
+}

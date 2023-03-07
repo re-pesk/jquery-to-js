@@ -46,6 +46,10 @@ td {
 | [$(...).attr(name)](?attributes/attr/) | **_Get the value of an attribute for the first element_** in the set of matched elements. | [API doc](https://api.jquery.com/attr/) |
 | [$(...).attr(name, value)<br />$(...).attr({name: value, ...})](?attributes/attr/) | **_Set one or more attributes for the set_** of matched elements. | ^|
 
+| CSS |||
+|:--|:--|:--:|
+| [$(...).addClass()](?attributes/addClass/) | **_Adds_** the specified **_class(es) to each element_** in the set of matched elements. | [API doc](https://api.jquery.com/addClass/) |
+
 ### [Manipulation](?manipulation/)
 
 | Copying |||
