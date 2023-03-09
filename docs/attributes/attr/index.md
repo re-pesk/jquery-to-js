@@ -1,15 +1,27 @@
 # Method .attr()
 
 <style>
-td {
-  vertical-align: top;
-}
+  th { text-align: left; }
+  tr td:nth-child(1) { width: 20%; }
+  tr td:nth-child(2) { width: 60%; }
+  tr td:nth-child(3) { width: 20%; }
+  td {
+    vertical-align: top;
+  }
 </style>
 
-| jQuery | JS | Description | API Reference |
-|:--|:--|:--|:--:|
-| $(...).attr(name) | querySelector(...).getAttribute(name) | **_Get the value of an attribute for the first element_** in the set of matched elements. | [API doc](https://api.jquery.com/attr/) |
-| $(...).attr(name, value)<br />$(...).attr({name: value, ...}) | querySelector(...).setAttribute(name, value) | **_Set one or more attributes for the set_** of matched elements. | ^|
+## Description
+
+| jQuery | Description | API Reference |
+|:--|:--|:--|
+| $(...).attr(...) | Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element. | [API doc](https://api.jquery.com/attr/) |
+
+## Usage
+
+| jQuery | Description | JS |
+|:--|:--|:--|
+| $(...).attr(name) | **_Get the value of an attribute for the first element_** in the set of matched elements. | querySelector(...).getAttribute(name) |
+| $(...).attr(name, value)<br />$(...).attr({name: value, ...}) | **_Set one or more attributes for the set_** of matched elements. | querySelector(...).setAttribute(name, value) |
 
 ## Common parts (shared)
 

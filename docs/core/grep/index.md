@@ -1,14 +1,26 @@
 # Method $.grep()
 
 <style>
+th { text-align: left; font-style: italic; }
+tr td:nth-child(1) { width: 25%; }
+tr td:nth-child(2) { width: 55%; }
+tr td:nth-child(3) { width: 20%; }
 td {
   vertical-align: top;
 }
 </style>
 
-| jQuery | JS | Description | API Reference |
-|:--:|:--:|:--:|:--:|
-| $.grep(aray, (element, index) => {...}, invert?) | array.filter((element, index, array) => {...}) | **_Finds the elements of an array_** which satisfy a filter function. The original array is not affected. | [API doc](https://api.jquery.com/jQuery.grep/) |
+## Description
+
+| jQuery | Description | API Reference |
+|:--|:--|:--:|
+| $.grep(aray, (value, index?) => {...}, invert?) | **_Finds the elements of an array_** which satisfy a filter function. The original array is not affected. | [API doc](https://api.jquery.com/jQuery.grep/) |
+
+## Usage
+
+| jQuery | JS | Description |
+|:--|:--|:--|
+| $.grep(<br />&nbsp;&nbsp;&nbsp;&nbsp;array: Aray, <br />&nbsp;&nbsp;&nbsp;&nbsp;(element: Element, index: Integer) => Bool, <br />&nbsp;&nbsp;&nbsp;&nbsp;invert? : Bool<br />) | **_Finds the elements of an array_** which satisfy a filter function. The original array is not affected. | array.filter((element, index, array) => {...}) |
 
 ## Common parts (shared)
 

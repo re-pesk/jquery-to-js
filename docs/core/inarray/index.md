@@ -1,15 +1,27 @@
 # Method $.inArray()
 
 <style>
+th { text-align: left; font-style: italic; }
+tr td:nth-child(1) { width: 25%; }
+tr td:nth-child(2) { width: 55%; }
+tr td:nth-child(3) { width: 20%; }
 td {
   vertical-align: top;
 }
 </style>
 
-| jQuery | JS | Description | API Reference |
-|:--|:--|:--|:--:|
-| [$.inArray(value, array, fromIndex?)](?inarray/) | array.indexOf(value, fromIndex?) | **_Search for a specified value_** within an array and return its index (or -1 if not found). | [API doc](https://api.jquery.com/jQuery.inArray/) |
-| $.inArray(value, array, fromIndex?) > -1 | array.includes(value, fromIndex?) | **_Search for a specified value_** within an array and return true if found). | ^|
+## Description
+
+| jQuery | Description | API Reference |
+|:--|:--|:--:|
+| $.inArray(value, array, fromIndex?) | **_Search for a specified value_** within an array and return its index (or -1 if not found). | [API doc](https://api.jquery.com/jQuery.inArray/) |
+
+## Usage
+
+| jQuery | Description | JS |
+|:--|:--|:--|
+| $.inArray(value, array, fromIndex?) | **_Search for a specified value_** within an array and return its index (or -1 if not found). | array.indexOf(value, fromIndex?) |
+| $.inArray(value, array, fromIndex?) > -1 | **_Search for a specified value_** within an array and return true if found. | array.includes(value, fromIndex?) |
 
 ## Common parts (shared)
 

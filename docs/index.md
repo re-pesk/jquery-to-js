@@ -48,7 +48,7 @@ td {
 
 | CSS |||
 |:--|:--|:--:|
-| [$(...).addClass()](?attributes/addClass/) | **_Adds_** the specified **_class(es) to each element_** in the set of matched elements. | [API doc](https://api.jquery.com/addClass/) |
+| [$(...).addClass(...)](?attributes/addClass/) | **_Adds_** the specified **_class(es) to each element_** in the set of matched elements. | [API doc](https://api.jquery.com/addClass/) |
 
 ### [Manipulation](?manipulation/)
 

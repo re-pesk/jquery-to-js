@@ -2,17 +2,25 @@
 
 <style>
 th { text-align: left; font-style: italic; }
-tr td:nth-child(1) { width: 30rem; }
-tr td:nth-child(2) { width: 30rem; }
-tr td:nth-child(3) { width: 60rem; }
+tr td:nth-child(1) { width: 25%; }
+tr td:nth-child(2) { width: 60%; }
+tr td:nth-child(3) { width: 15%; }
 td {
   vertical-align: top;
 }
 </style>
 
-| jQuery | JS | Description | API Reference |
-|:--|:--|:--|:--:|
-| $.contains(container, contained) | container.contains(contained) | **_Check_** to see **_if a DOM element is a descendant_** of another DOM element. | [API doc](https://api.jquery.com/jQuery.contains/) |
+## Description
+
+| jQuery | Description | API Reference |
+|:--|:--|:--:|
+| $.contains(container, contained) | **_Check_** to see **_if a DOM element is a descendant_** of another DOM element. |[API doc](https://api.jquery.com/jQuery.contains/) |
+
+## Usage
+
+| Usage | Description | JS |
+|:--|:--|:--|
+| $.contains(container: Element, contained: Element) | **_Check_** to see **_if a DOM element is a descendant_** of another DOM element. | container.contains(contained) |
 
 ## Common parts (shared)
 

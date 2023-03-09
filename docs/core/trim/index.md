@@ -1,14 +1,26 @@
 # Method $.trim()
 
 <style>
+th { text-align: left; font-style: italic; }
+tr td:nth-child(1) { width: 25%; }
+tr td:nth-child(2) { width: 55%; }
+tr td:nth-child(3) { width: 20%; }
 td {
   vertical-align: top;
 }
 </style>
 
-| jQuery | JS | Description | API Reference |
-|:--:|:--:|:--:|:--:|
-| $.trim(text) | text.trim() | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
+## Description
+
+| jQuery | Description | API Reference |
+|:--|:--|:--:|
+| $.trim(text) | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
+
+## Usage
+
+| jQuery | Description | JS |
+|:--|:--|:--|
+| $.trim(text) | **_Remove the whitespace_** from the beginning and end of a string. | text.trim() |
 
 ## Common parts (shared)
 
