@@ -91,6 +91,12 @@ td {
 
 ### [Core](?core/)
 
+| Deferred Object |||
+|:--|:--|:--:|
+| [$.Deferred(beforeStart?)](?core/Deferred/) | A factory function that **_returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state_** of any synchronous or asynchronous function. | [API doc](https://api.jquery.com/jQuery.Deferred/) |
+| [deferred.always( alwaysCallbacks, alwaysCallbacks? )](?core/deferred.always/) | A function, or array of functions, that is **_called when the Deferred is resolved or rejected_**. | [API doc](https://api.jquery.com/deferred.always/) |
+| [deferred.done( doneCallbacks, doneCallbacks? )](?deferred.done/) | A function, or array of functions, that is **_called when the Deferred is resolved or rejected_**. | [API doc](https://api.jquery.com/deferred.done/) |
+
 | Utilities |||
 |--|--|--|
 | [$.contains(container, contained)](?core/contains/) | **_Check_** to see **_if a DOM element is a descendant_** of another DOM element. | [API doc](https://api.jquery.com/jQuery.contains/) |
