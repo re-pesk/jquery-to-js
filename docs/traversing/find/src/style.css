@@ -1,0 +1,10 @@
+p {
+  font-size: 20px;
+  width: 200px;
+  color: blue;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.hilite {
+  background: yellow;
+}

@@ -1,8 +1,11 @@
 document.querySelector('head > title').innerHTML = 'find demo';
+document.querySelector('head > style').innerHTML = '@import "./src/style.css";';
 
 const body = document.querySelector('body');
 body.innerHTML = `
-<div><p><span>Hello</span>, how are you?</p></div>
-<div><p>Me? I'm <span>good</span>.</p></div>
-<div><span>This is text outside conversation.</span></div>
+<p>
+  When the day is short
+  find that which matters to you
+  or stop believing
+</p>
 `;
