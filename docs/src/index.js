@@ -1,10 +1,11 @@
-import 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
-import 'https://cdn.jsdelivr.net/npm/marked-extended-tables@1.0.5/lib/index.umd.min.js';
+import { loadParser } from './load-markdown-it.js';
 
 const q = (selector, context) => (context || document).querySelector(selector);
 const qq = (selector, context) => (context || document).querySelectorAll(selector);
 
-const marked  = window.marked;
+// const marked  = window.marked;
+const metaData = {};
+const mdParser = loadParser(metaData);
 
 /*
     Node.prototype.on = Node.prototype.addEventListener;
@@ -118,8 +119,8 @@ if (searchString) {
 const regexp = new RegExp(`${mdview}\\?`);
 const fileToLoad = url.replace(regexp, '');
 const mdContent = await getContent(fileToLoad);
-marked.use(self['extended-tables']());
-let htmlContent = marked.parse(mdContent, { gfm: true, xhtml: true });
+let htmlContent = mdParser.render(mdContent);
+
 if (prefix) {
   htmlContent = `<div class="back"><a href="/${basePath}/">Home</a> | <a href="../">Up</a></div>${htmlContent}`;
 }
