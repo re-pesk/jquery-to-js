@@ -2,7 +2,7 @@
 
 Examples with jQuery code use <span style='color: red'>red</span> color, examples with vanilla js use <span style='color: blue'>blue</span> one.
 
-## [Selectors](?selectors/)
+## [Selectors](?selectors.md)
 
 <style>
 th { text-align: left; font-style: italic; }
@@ -39,7 +39,7 @@ td {
 
 ## Methods
 
-### [Attributes / CSS](?attributes/)
+### [Attributes / CSS](?attributes.md)
 
 | Attributes |||
 |:--|:--|:--:|
@@ -50,7 +50,7 @@ td {
 |:--|:--|:--:|
 | [$(...).addClass(...)](?attributes/addClass/) | **_Adds_** the specified **_class(es) to each element_** in the set of matched elements. | [API doc](https://api.jquery.com/addClass/) |
 
-### [Manipulation](?manipulation/)
+### [Manipulation](?manipulation.md)
 
 | Copying |||
 |:--|:--|:--:|
@@ -72,7 +72,7 @@ td {
 |:--|:--|:--:|
 | [$(...).remove(selector)](?manipulation/remove/) | **_Remove_** the set of matched elements from the DOM. | [API doc](https://api.jquery.com/remove/) |
 
-### [Traversing](?traversing/)
+### [Traversing](?traversing.md)
 
 | Filtering |||
 |:--|:--|:--:|
@@ -89,22 +89,22 @@ td {
 | [$(...).children(selector?)](?traversing/children/) | Get the **_children of each element_** in the set of matched elements, optionally filtered by a selector. | [API doc](https://api.jquery.com/children/) |
 | [$(...).find(selector)](?traversing/find/) | Get the **_descendants of each element_** in the current set of matched elements, filtered by a selector, jQuery object, or element. | [API doc](https://api.jquery.com/find/) |
 
-### [Core](?core/)
+### [Core](?core.md)
 
 | Deferred Object |||
 |:--|:--|:--:|
-| [$.Deferred(beforeStart?)](?core/Deferred/) | A factory function that **_returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state_** of any synchronous or asynchronous function. | [API doc](https://api.jquery.com/jQuery.Deferred/) |
-| [deferred.always( alwaysCallbacks, alwaysCallbacks? )](?core/deferred.always/) | A function, or array of functions, that is **_called when the Deferred is resolved or rejected_**. | [API doc](https://api.jquery.com/deferred.always/) |
+| [$.Deferred(beforeStart?)](?deferred/) | A factory function that **_returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state_** of any synchronous or asynchronous function. | [API doc](https://api.jquery.com/jQuery.Deferred/) |
+| [deferred.always( alwaysCallbacks, alwaysCallbacks? )](?deferred.always/) | A function, or array of functions, that is **_called when the Deferred is resolved or rejected_**. | [API doc](https://api.jquery.com/deferred.always/) |
 | [deferred.done( doneCallbacks, doneCallbacks? )](?deferred.done/) | A function, or array of functions, that is **_called when the Deferred is resolved or rejected_**. | [API doc](https://api.jquery.com/deferred.done/) |
 
 | Utilities |||
 |--|--|--|
-| [$.contains(container, contained)](?core/contains/) | **_Check_** to see **_if a DOM element is a descendant_** of another DOM element. | [API doc](https://api.jquery.com/jQuery.contains/) |
-| [$.each(aray \| object, (index \| name, value) => {...})](?core/each/) | A generic **_iterator function_**, which can be used to seamlessly iterate **_over both objects and arrays_**. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties. | [API doc](https://api.jquery.com/jQuery.each/) |
-| [$.grep(aray, (value, index?) => {...}, invert?)](?core/grep/) | **_Finds the elements of an array_** which satisfy a filter function. The original array is not affected. | [API doc](https://api.jquery.com/jQuery.grep/) |
-| [$.inArray(value, array, fromIndex?)](?core/inarray/) | **_Search for a specified value_** within an array and return its index (or -1 if not found). | [API doc](https://api.jquery.com/jQuery.inArray/) |
-| [$.merge(array1, array2)](?core/merge/) | **_Merge_** the contents of **_two arrays_** together **_into the first array_**. | [API doc](https://api.jquery.com/jQuery.merge/) |
-| [$.trim(text)](?core/trim/) | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
+| [$.contains(container, contained)](?jquery.contains/) | **_Check_** to see **_if a DOM element is a descendant_** of another DOM element. | [API doc](https://api.jquery.com/jQuery.contains/) |
+| [$.each(aray \| object, (index \| name, value) => {...})](?jquery.each/) | A generic **_iterator function_**, which can be used to seamlessly iterate **_over both objects and arrays_**. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties. | [API doc](https://api.jquery.com/jQuery.each/) |
+| [$.grep(aray, (value, index?) => {...}, invert?)](?jquery.grep/) | **_Finds the elements of an array_** which satisfy a filter function. The original array is not affected. | [API doc](https://api.jquery.com/jQuery.grep/) |
+| [$.inArray(value, array, fromIndex?)](?jquery.inarray/) | **_Search for a specified value_** within an array and return its index (or -1 if not found). | [API doc](https://api.jquery.com/jQuery.inArray/) |
+| [$.merge(array1, array2)](?jquery.merge/) | **_Merge_** the contents of **_two arrays_** together **_into the first array_**. | [API doc](https://api.jquery.com/jQuery.merge/) |
+| [$.trim(text)](?jquery.trim/) | **_Remove the whitespace_** from the beginning and end of a string. | [API doc](https://api.jquery.com/jQuery.trim/) |
 ----
 
 ## Misc

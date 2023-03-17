@@ -110,8 +110,9 @@ const mdFileName = `?${last}`;
 let url = '';
 let prefix = '';
 const searchString = window.location.search.slice(1);
+const { path, fileName } = splitPathName(searchString);
 if (searchString) {
-  prefix = splitPathName(searchString).path;
+  prefix = path;
   url = window.location.toString();
 } else {
   url = `${window.location.toString()}${mdFileName}`;
@@ -123,7 +124,10 @@ let htmlContent = mdParser.render(mdContent);
 
 if (prefix) {
   htmlContent = `<div class="back"><a href="/${basePath}/">Home</a> | <a href="../">Up</a></div>${htmlContent}`;
-}
+} else if(fileName !== last) {
+  htmlContent = `<div class="back"><a href="/${basePath}/">Home</a></div>${htmlContent}`;
+} 
+
 htmlContent = htmlContent.replaceAll(/(href=)("[^"]*")/g, replacer);
 htmlContent = htmlContent.replaceAll(/(src=)("[^"]*")/g, replacer);
 q('#content').innerHTML = htmlContent;
