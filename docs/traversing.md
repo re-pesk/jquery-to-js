@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD012 -->
 # Traversing
 
 Equivalents of jQuery methods in Vanilla JavaScript
@@ -15,11 +16,13 @@ td {
 |:--|:--|:--:|
 | [$(...).filter()](?filter/) | **_Reduce the set of matched elements_** to those that match the selector or pass the function's test. | [API doc](https://api.jquery.com/filter/) |
 
+
 | Miscellaneous Traversing |||
 |:--|:--|:--:|
 | [$(...).contents()](?contents/) | Get the **_children_** of each element in the set of matched elements, **_including text and comment nodes_**. | [API doc](https://api.jquery.com/contents/) |
 | [$(...).each((index, element?) => {...})](?each/) | **_Iterate_** over a jQuery object, **_executing a function_** for each matched element. | [API doc](https://api.jquery.com/each/) |
 | [$(...).end()](?end/) | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [API doc](https://api.jquery.com/end/) |
+
 
 | Tree Traversal |||
 |:--|:--|:--:|

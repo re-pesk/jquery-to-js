@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD012 -->
 # Attributes / CSS
 
 Equivalents of jQuery methods in Vanilla JavaScript
@@ -15,6 +16,7 @@ td {
 |:--|:--|:--:|
 | [$(...).attr(name)](?attr/) | **_Get the value of an attribute for the first element_** in the set of matched elements. | [API doc](https://api.jquery.com/attr/) |
 | [$(...).attr(name, value)<br />$(...).attr({name: value, ...})](?attr/) | **_Set one or more attributes for the set_** of matched elements. | ^|
+
 
 | CSS |||
 |:--|:--|:--:|

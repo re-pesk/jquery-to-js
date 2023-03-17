@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD012 -->
 # Core
 
 Equivalents of jQuery methods in Vanilla JavaScript
@@ -16,6 +17,7 @@ td {
 | [$.Deferred(beforeStart?)](?deferred/) | A factory function that **_returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state_** of any synchronous or asynchronous function. | [API doc](https://api.jquery.com/jQuery.Deferred/) |
 | [deferred.always( alwaysCallbacks, alwaysCallbacks? )](?deferred.always/) | A function, or array of functions, that is **_called when the Deferred is resolved or rejected_**. | [API doc](https://api.jquery.com/deferred.always/) |
 | [deferred.done( doneCallbacks, doneCallbacks? )](?deferred.done/) | A function, or array of functions, that is **_called when the Deferred is resolved or rejected_**. | [API doc](https://api.jquery.com/deferred.done/) |
+
 
 | Utilities |||
 |:--|:--|:--:|

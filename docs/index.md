@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD012 -->
 # jQuery to JS
 
 Examples with jQuery code use <span style='color: red'>red</span> color, examples with vanilla js use <span style='color: blue'>blue</span> one.
@@ -21,6 +22,7 @@ td {
 | [$('#id')](?selectors/id/) | Select a single element with the given **_id_** attribute. | [API doc](https://api.jquery.com/id-selector/) |
 | [$('selector1, selector2, ...')](?selectors/multiple/) | Select the **_combined results_** of all the specified selectors. | [API doc](https://api.jquery.com/multiple-selector/) |
 
+
 | Hierarchy |||
 |:--|:--|:--:|
 | [$('parent > child')](?selectors/child/) | Select all direct child elements specified by "**_child_**" of elements specified by "parent". | [API doc](https://api.jquery.com/child-selector/) |
@@ -28,10 +30,12 @@ td {
 | [$('prev + next')](?selectors/next/) | Select all **_next_** elements matching "next" that are **_immediately preceded_** by a sibling "prev" | [API doc](https://api.jquery.com/next-adjacent-Selector/) |
 | [$('prev ~ siblings')](?selectors/siblings/) | Select all **_sibling_** elements that follow after the "prev" element, have the same parent, and match the filtering "siblings" selector. | [API doc](https://api.jquery.com/next-siblings-selector/) |
 
+
 | Basic Filters |||
 |:--|:--|:--:|
 | [$(':animated')](?selectors/animated/) | Select all elements that are **_in the progress of an animation_** at the time the selector is run. | [API doc](https://api.jquery.com/animated-selector/) |
 | [$(':header')](?selectors/header/) | Select all elements that are **_headers_**, like h1, h2, h3 and so on. | [API doc](https://api.jquery.com/header-selector/) |
+
 
 | Content Filters |||
 |:--|:--|:--:|
@@ -46,6 +50,7 @@ td {
 | [$(...).attr(name)](?attributes/attr/) | **_Get the value of an attribute for the first element_** in the set of matched elements. | [API doc](https://api.jquery.com/attr/) |
 | [$(...).attr(name, value)<br />$(...).attr({name: value, ...})](?attributes/attr/) | **_Set one or more attributes for the set_** of matched elements. | ^|
 
+
 | CSS |||
 |:--|:--|:--:|
 | [$(...).addClass(...)](?attributes/addClass/) | **_Adds_** the specified **_class(es) to each element_** in the set of matched elements. | [API doc](https://api.jquery.com/addClass/) |
@@ -56,11 +61,13 @@ td {
 |:--|:--|:--:|
 | [$(...).clone()](?manipulation/clone/) | Create a **_deep copy_** of the set of matched elements. | [API doc](https://api.jquery.com/clone/) |
 
+
 | DOM Insertion, Around |||
 |:--|:--|:--:|
 | [$(...).wrap(wrappingElement \| function)](?manipulation/wrap/) | Wrap an HTML structure **_around each element_** in the set of matched elements. | [API doc](https://api.jquery.com/wrap/) |
 | [$(...).wrapAll(wrappingElement \| function)](?manipulation/wrapall/) | Wrap an HTML structure **_around all elements_** in the set of matched elements. | [API doc](https://api.jquery.com/wrapAll/) |
 | [$(...).wrapInner(wrappingElement \| function)](?manipulation/wrapinner/) | Wrap an HTML structure **_around the content of each element_** in the set of matched elements. | [API doc](https://api.jquery.com/wrapInner/) |
+
 
 | DOM Insertion, Inside |||
 |:--|:--|:--:|
@@ -68,21 +75,25 @@ td {
 | [$(...).text()](?manipulation/text/) | Get the combined text contents of each element in the set of matched elements, including their descendants. | [API doc](https://api.jquery.com/text/) |
 | [$(...).text(text \| function)](?manipulation/text/) | Set the content of each element in the set of matched elements to the specified text. | ^|
 
+
 | DOM Removal |||
 |:--|:--|:--:|
 | [$(...).remove(selector)](?manipulation/remove/) | **_Remove_** the set of matched elements from the DOM. | [API doc](https://api.jquery.com/remove/) |
 
 ### [Traversing](?traversing.md)
 
+
 | Filtering |||
 |:--|:--|:--:|
 | [$(...).filter()](?traversing/filter/) | **_Reduce the set of matched elements_** to those that match the selector or pass the function's test. | [API doc](https://api.jquery.com/filter/) |
+
 
 | Miscellaneous Traversing |||
 |:--|:--|:--:|
 | [$(...).contents()](?traversing/contents/) | Get the **_children_** of each element in the set of matched elements, **_including text and comment nodes_**. | [API doc](https://api.jquery.com/contents/) |
 | [$(...).each((index, element?) => {...})](?traversing/each/) | **_Iterate_** over a jQuery object, **_executing a function_** for each matched element. | [API doc](https://api.jquery.com/each/) |
 | [$(...).end()](?traversing/end/) | **_End_** the most recent **_filtering operation_** in the current chain and **_return_** the set of matched elements **_to its previous state_**. | [API doc](https://api.jquery.com/end/) |
+
 
 | Tree Traversal |||
 |:--|:--|:--:|
@@ -96,6 +107,7 @@ td {
 | [$.Deferred(beforeStart?)](?deferred/) | A factory function that **_returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state_** of any synchronous or asynchronous function. | [API doc](https://api.jquery.com/jQuery.Deferred/) |
 | [deferred.always( alwaysCallbacks, alwaysCallbacks? )](?deferred.always/) | A function, or array of functions, that is **_called when the Deferred is resolved or rejected_**. | [API doc](https://api.jquery.com/deferred.always/) |
 | [deferred.done( doneCallbacks, doneCallbacks? )](?deferred.done/) | A function, or array of functions, that is **_called when the Deferred is resolved or rejected_**. | [API doc](https://api.jquery.com/deferred.done/) |
+
 
 | Utilities |||
 |--|--|--|
