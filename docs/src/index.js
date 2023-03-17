@@ -122,11 +122,9 @@ const fileToLoad = url.replace(regexp, '');
 const mdContent = await getContent(fileToLoad);
 let htmlContent = mdParser.render(mdContent);
 
-if (prefix) {
-  htmlContent = `<div class="back"><a href="/${basePath}/">Home</a> | <a href="../">Up</a></div>${htmlContent}`;
-} else if(fileName !== last) {
+if (prefix || fileName !== last) {
   htmlContent = `<div class="back"><a href="/${basePath}/">Home</a></div>${htmlContent}`;
-} 
+}
 
 htmlContent = htmlContent.replaceAll(/(href=)("[^"]*")/g, replacer);
 htmlContent = htmlContent.replaceAll(/(src=)("[^"]*")/g, replacer);

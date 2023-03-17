@@ -4,6 +4,6 @@
     document.querySelector('body').textContent = 'Error! Script is not allowed!';
     return;
   }
-  import('./prepare.js');
+  import('./prepare.js.js');
   import(`./${search}.js`);
 })()
