@@ -1,5 +1,6 @@
-<!-- markdownlint-disable MD012 -->
-# Category: Core ([API doc](https://api.jquery.com/category/core/))
+[#Selectors](?/selectors.md)
+
+# Category: Hierarchy ([API doc](https://api.jquery.com/category/selectors/hierarchy-selectors/))
 
 <style>
 th { text-align: left; font-style: italic; }
@@ -9,4 +10,3 @@ td {
   vertical-align: top;
 }
 </style>
-

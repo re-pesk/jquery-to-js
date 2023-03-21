@@ -1,5 +1,6 @@
-<!-- markdownlint-disable MD012 -->
-# Category: Core ([API doc](https://api.jquery.com/category/core/))
+[#manipulation](?/manipulation.md)
+
+# Category: General Attributes ([API doc](https://api.jquery.com/category/manipulation/general-attributes/))
 
 <style>
 th { text-align: left; font-style: italic; }
@@ -9,4 +10,3 @@ td {
   vertical-align: top;
 }
 </style>
-

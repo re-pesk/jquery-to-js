@@ -1,5 +1,6 @@
-<!-- markdownlint-disable MD012 -->
-# Category: Core ([API doc](https://api.jquery.com/category/core/))
+[#Traversing](?/traversing.md)
+
+# Category: Tree Traversal ([API doc](https://api.jquery.com/category/traversing/tree-traversal/))
 
 <style>
 th { text-align: left; font-style: italic; }
@@ -9,4 +10,3 @@ td {
   vertical-align: top;
 }
 </style>
-

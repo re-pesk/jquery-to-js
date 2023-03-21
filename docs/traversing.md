@@ -5,12 +5,19 @@ Equivalents of jQuery methods in Vanilla JavaScript
 
 <style>
 th { text-align: left; font-style: italic; }
-tr td:nth-child(1) { width: 20rem; }
-tr td:nth-child(2) { width: 60rem; }
+tr td:nth-child(1) { width: 15%; font-weight: bold; }
+tr td:nth-child(2) { width: 75%; }
 td {
   vertical-align: top;
 }
 </style>
+
+{.category-list}
+
+* [Traversing](?traversing.md) [~doc~](https://api.jquery.com/category/traversing/)
+  * [Filtering](?filtering.md) [~doc~](//api.jquery.com/category/traversing/filtering/)
+  * [Miscellaneous Traversing](?miscellaneous-traversing.md) [~doc~](//api.jquery.com/category/traversing/miscellaneous-traversal/)
+  * [Tree Traversal](?tree-traversal.md) [~doc~](//api.jquery.com/category/traversing/tree-traversal/)
 
 | Filtering |||
 |:--|:--|:--:|

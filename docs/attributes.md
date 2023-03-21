@@ -1,12 +1,12 @@
 <!-- markdownlint-disable MD012 -->
-# Attributes / CSS
+# Category: Attributes ([API doc](https://api.jquery.com/category/attributes/))
 
-Equivalents of jQuery methods in Vanilla JavaScript
+These methods get and set DOM attributes of elements.
 
 <style>
 th { text-align: left; font-style: italic; }
-tr td:nth-child(1) { width: 25rem; }
-tr td:nth-child(2) { width: 60rem; }
+tr td:nth-child(1) { width: 15%; font-weight: bold; }
+tr td:nth-child(2) { width: 75%; }
 td {
   vertical-align: top;
 }
@@ -14,8 +14,8 @@ td {
 
 | Attributes |||
 |:--|:--|:--:|
-| [$(...).attr(name)](?pages/attr/) | **_Get the value of an attribute for the first element_** in the set of matched elements. | [API doc](https://api.jquery.com/attr/) |
-| [$(...).attr(name, value)<br />$(...).attr({name: value, ...})](?pages/attr/) | **_Set one or more attributes for the set_** of matched elements. | ^|
+| [.addClass()](?pages/add-class/) | **_Adds_** the specified **_class(es) to each element_** in the set of matched elements. | [API doc](https://api.jquery.com/addClass/) |
+| [.attr()](?pages/attr/) | Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element. | [API doc](https://api.jquery.com/attr/) |
 
 
 | CSS |||
