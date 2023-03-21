@@ -2,25 +2,12 @@ import { loadParser } from './load-markdown-it.js';
 
 const q = (selector, context) => (context || document).querySelector(selector);
 const qq = (selector, context) => (context || document).querySelectorAll(selector);
+NodeList.prototype.__proto__ = Array.prototype;
 
 // const marked  = window.marked;
 const metaData = {};
 const mdParser = loadParser(metaData);
 
-/*
-    Node.prototype.on = Node.prototype.addEventListener;
-    window.on = window.addEventListener;
-
-    // eslint-disable-next-line no-proto
-    NodeList.prototype.__proto__ = Array.prototype;
-
-    // eslint-disable-next-line no-multi-assign, func-names
-    NodeList.prototype.on = NodeList.prototype.addEventListener = function (name, fn) {
-      this.forEach((elem) => {
-        elem.on(name, fn);
-      });
-    }.bind(NodeList.prototype);
- */
 async function getContent(url) {
   return await fetch(url)
     .then(response => {
@@ -40,6 +27,17 @@ function splitPathName(pathName = window.location.pathname) {
 
 function replacer(str, attrName, urlArg) {
   let url = urlArg;
+  const viewerFile = `${window.location.origin}${window.location.pathname}`;
+
+  // If prefix does not empty, insert it to beginning of url
+  if (url === '"/"') {
+    return `${attrName}${document.baseURI}`;
+  }
+
+  if (url.match(/^"\?\/[^.]+\.md"$/)) {
+    url = url.replace(/(?<=")(\?)\/([^.]+\.md)(?=")/, `${viewerFile}$1$2`);
+    return `${attrName}${url}`;
+  }
 
   // If url string starts with http(s), it is a link to external resource. Add 'target="_blank"' and return
   if (url.startsWith(`"http`)) {
@@ -122,12 +120,29 @@ const fileToLoad = url.replace(regexp, '');
 const mdContent = await getContent(fileToLoad);
 let htmlContent = mdParser.render(mdContent);
 
-if (prefix || fileName !== last) {
-  htmlContent = `<div class="back"><a href="/${basePath}/">Home</a></div>${htmlContent}`;
-}
-
 htmlContent = htmlContent.replaceAll(/(href=)("[^"]*")/g, replacer);
 htmlContent = htmlContent.replaceAll(/(src=)("[^"]*")/g, replacer);
+
+if (prefix || fileName !== last) {
+  htmlContent = `<div class="navbar"><a href="/${basePath}/">Home</a></div>${htmlContent}`;
+}
+
 q('#content').innerHTML = htmlContent;
+
+document.querySelectorAll('a')
+  .filter((element) => (element.innerText.startsWith('#')))
+  .forEach((element) => {
+    if (element.innerText.startsWith('#>')) {
+      document.querySelector('.navbar').append(' » ');
+      element.innerText = element.innerText.slice(2);
+      document.querySelector('.navbar').append(element);
+      return;
+    }
+    document.querySelector('.navbar').append(' | ');
+    element.innerText = element.innerText.slice(1);
+    document.querySelector('.navbar').append(element);
+    return;
+});
+
 loadSrc('#content', prefix);
 

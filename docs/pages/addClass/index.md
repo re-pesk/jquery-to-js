@@ -1,3 +1,8 @@
+[#Attributes](?/attributes.md)
+[#CSS](?/css.md)
+[#Manipulation](?/manipulation.md)
+[#> Class Attribute](?/class-attribute.md)
+
 # Method .addClass()
 
 <style>
@@ -14,7 +19,7 @@
 
 | jQuery | Description | API Reference |
 |:--|:--|:--:|
-| $(...).addClass(...) | **_Adds_** the specified **_class(es) to each element_** in the set of matched elements. | [API doc](https://api.jquery.com/addClass/) |
+| .addClass() | **_Adds_** the specified **_class(es) to each element_** in the set of matched elements. | [API doc](https://api.jquery.com/addClass/) |
 
 ## Usage
 
