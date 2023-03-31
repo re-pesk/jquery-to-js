@@ -19,7 +19,7 @@ import { asidePlugin as Aside } from 'https://cdn.jsdelivr.net/npm/@humanwhocode
 // import Anchor from 'https://cdn.jsdelivr.net/npm/markdown-it-anchor@8.6.7/+esm';
 import TocDoneRight from 'https://cdn.jsdelivr.net/npm/markdown-it-toc-done-right@4.2.0/+esm';
 // import Replacements from 'https://cdn.jsdelivr.net/npm/markdown-it-replacements@1.0.2/+esm';
-// import Toc from 'markdown-it-table-of-contents';
+import Expandable from 'https://cdn.jsdelivr.net/npm/markdown-it-expandable@1.0.2/+esm';
 import YAML from 'https://cdn.jsdelivr.net/npm/yaml@2.2.1/+esm';
 
 export const moduleDataList = [
@@ -44,6 +44,7 @@ export const moduleDataList = [
   // ['Anchor', Anchor],
   ['TocDoneRight', TocDoneRight],
   // ['Replacements', Replacements],
+  ['Expandable', Expandable],
   ['YAML', YAML],
 ];
 

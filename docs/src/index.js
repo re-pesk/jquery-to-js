@@ -8,13 +8,6 @@ NodeList.prototype.__proto__ = Array.prototype;
 const metaData = {};
 const mdParser = loadParser(metaData);
 
-const htmlToElement = (htmlArg) => {
-  const template = document.createElement('template');
-  const html = htmlArg.trim(); // Never return a text node of whitespace as the result
-  template.innerHTML = html;
-  return template.content.firstChild;
-};
-
 async function getContent(url) {
   return await fetch(url)
     .then(response => {
@@ -135,13 +128,6 @@ if (prefix || fileName !== last) {
 }
 
 q('#content').innerHTML = htmlContent;
-
-qq('.category-list').forEach((list) => {
-  const details = htmlToElement(`<details><summary>Category Tree</summary></details>`);
-  const parentNode = list.parentNode;
-  parentNode.insertBefore(details, list);
-  details.append(list);
-});
 
 document.querySelectorAll('a')
   .filter((element) => (element.innerText.startsWith('#')))

@@ -15,7 +15,8 @@ td {
 
 {.category-list}
 
-* [Ajax]() [~doc~](//api.jquery.com/category/ajax/)
+>>> Category Tree
+* * [Ajax]() [~doc~](//api.jquery.com/category/ajax/)
   * [Global Ajax Event Handlers]() [~doc~](//api.jquery.com/category/ajax/global-ajax-event-handlers/)
   * [Helper Functions]() [~doc~](//api.jquery.com/category/ajax/helper-functions/)
   * [Low-Level Interface]() [~doc~](//api.jquery.com/category/ajax/low-level-interface/)
@@ -77,6 +78,8 @@ td {
   * [Miscellaneous Traversing](?miscellaneous-traversing.md) [~doc~](//api.jquery.com/category/traversing/miscellaneous-traversal/)
   * [Tree Traversal](?tree-traversal.md) [~doc~](//api.jquery.com/category/traversing/tree-traversal/)
 * [Utilities](?utilities.md) [~doc~](//api.jquery.com/category/utilities/)
+>>>
+
 
 |:--|:--|:--:|
 | [.addClass()](?pages/add-class/) [~doc~](https://api.jquery.com/addClass/) | **_Adds_** the specified **_class(es) to each element_** in the set of matched elements. | [Attributes](?attributes.md) \| [CSS](?css.md) \| [Manipulation](?manipulation.md) &raquo; [Class Attribute](?class-attribute.md) |
