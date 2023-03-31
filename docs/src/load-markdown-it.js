@@ -1,61 +1,30 @@
-/*
-import MarkdownIt from 'markdown-it';
-import FrontMatter from 'markdown-it-front-matter';
-// import Metadata from 'markdown-it-metadata-block';
-import Sub from 'markdown-it-sub';
-import Sup from 'markdown-it-sup';
-import Footnote from 'markdown-it-footnote';
-import Deflist from 'markdown-it-deflist';
-import Abbr from 'markdown-it-abbr';
-import Emoji from 'markdown-it-emoji';
-import Container from 'markdown-it-bracketed-spans';
-import BracketSpan from 'markdown-it-container';
-import Insert from 'markdown-it-ins';
-import Mark from 'markdown-it-mark';
-import Admon from 'markdown-it-admon';
-import MmdTable from 'markdown-it-multimd-table';
-import YamlTable from 'markdown-it-complex-table';
-import GridTable from 'markdown-it-gridtables';
-import Attrs from '@sup39/markdown-it-attr';
-import { asidePlugin as Aside } from '@humanwhocodes/markdown-it-markua-aside';
-import Anchor from 'markdown-it-anchor';
+import MarkdownIt from 'https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/+esm';
+import FrontMatter from 'https://cdn.jsdelivr.net/npm/markdown-it-front-matter@0.2.3/+esm';
+import Sub from 'https://cdn.jsdelivr.net/npm/markdown-it-sub@1.0.0/+esm';
+import Sup from 'https://cdn.jsdelivr.net/npm/markdown-it-sup@1.0.0/+esm';
+import Footnote from 'https://cdn.jsdelivr.net/npm/markdown-it-footnote@3.0.3/+esm';
+import Deflist from 'https://cdn.jsdelivr.net/npm/markdown-it-deflist@2.1.0/+esm';
+import Abbr from 'https://cdn.jsdelivr.net/npm/markdown-it-abbr@1.0.4/+esm';
+import Emoji from 'https://cdn.jsdelivr.net/npm/markdown-it-emoji@2.0.2/+esm';
+import Container from 'https://cdn.jsdelivr.net/npm/markdown-it-bracketed-spans@1.0.1/+esm';
+import BracketSpan from 'https://cdn.jsdelivr.net/npm/markdown-it-container@3.0.0/+esm';
+import Insert from 'https://cdn.jsdelivr.net/npm/markdown-it-ins@3.0.1/+esm';
+import Mark from 'https://cdn.jsdelivr.net/npm/markdown-it-mark@3.0.1/+esm';
+import Admon from 'https://cdn.jsdelivr.net/npm/markdown-it-admon@1.0.0/+esm';
+import MmdTable from 'https://cdn.jsdelivr.net/npm/markdown-it-multimd-table@4.2.1/+esm';
+import YamlTable from 'https://cdn.jsdelivr.net/npm/markdown-it-complex-table@1.0.0/+esm';
+import GridTable from 'https://cdn.jsdelivr.net/npm/markdown-it-gridtables@0.6.0/+esm';
+import Attrs from 'https://cdn.jsdelivr.net/npm/@sup39/markdown-it-attr@1.2.2/+esm';
+import { asidePlugin as Aside } from 'https://cdn.jsdelivr.net/npm/@humanwhocodes/markdown-it-markua-aside@0.2.0/+esm';
+// import Anchor from 'https://cdn.jsdelivr.net/npm/markdown-it-anchor@8.6.7/+esm';
+import TocDoneRight from 'https://cdn.jsdelivr.net/npm/markdown-it-toc-done-right@4.2.0/+esm';
+// import Replacements from 'https://cdn.jsdelivr.net/npm/markdown-it-replacements@1.0.2/+esm';
 // import Toc from 'markdown-it-table-of-contents';
-import TocDoneRight from 'markdown-it-toc-done-right';
-// import Replacements from 'markdown-it-replacements';
-import YAML from 'yaml';
-*/
-
-import MarkdownIt from './markdown-it/markdown-it.bundle.js';
-import FrontMatter from './markdown-it/markdown-it-front-matter.bundle.js';
-// import Metadata from 'markdown-it-metadata-block';
-import Sub from './markdown-it/markdown-it-sub.bundle.js';
-import Sup from './markdown-it/markdown-it-sup.bundle.js';
-import Footnote from './markdown-it/markdown-it-footnote.bundle.js';
-import Deflist from './markdown-it/markdown-it-deflist.bundle.js';
-import Abbr from './markdown-it/markdown-it-abbr.bundle.js';
-import Emoji from './markdown-it/markdown-it-emoji.bundle.js';
-import Container from './markdown-it/markdown-it-bracketed-spans.bundle.js';
-import BracketSpan from './markdown-it/markdown-it-container.bundle.js';
-import Insert from './markdown-it/markdown-it-ins.bundle.js';
-import Mark from './markdown-it/markdown-it-mark.bundle.js';
-import Admon from './markdown-it/markdown-it-admon.bundle.js';
-import MmdTable from './markdown-it/markdown-it-multimd-table.bundle.js';
-import YamlTable from './markdown-it/markdown-it-complex-table.bundle.js';
-import GridTable from './markdown-it/markdown-it-gridtables.bundle.js';
-import Attrs from './markdown-it/markdown-it-attr.bundle.js';
-import { asidePlugin as Aside } from './markdown-it/markdown-it-markua-aside.bundle.js';
-import Anchor from './markdown-it/markdown-it-anchor.bundle.js';
-// import Toc from 'markdown-it-table-of-contents';
-import TocDoneRight from './markdown-it/markdown-it-toc-done-right.bundle.js';
-// import Replacements from 'markdown-it-replacements';
-import YAML from './markdown-it/yaml.bundle.js';
-
-// const Aside = asidePlugin;
+import YAML from 'https://cdn.jsdelivr.net/npm/yaml@2.2.1/+esm';
 
 export const moduleDataList = [
   ['MarkdownIt', MarkdownIt],
   ['FrontMatter', FrontMatter],
-  // ['Metadata', Metadata],
   ['Sub', Sub],
   ['Sup', Sup],
   ['Footnote', Footnote],
@@ -68,12 +37,11 @@ export const moduleDataList = [
   ['Mark', Mark],
   ['Admon', Admon],
   ['MmdTable', MmdTable],
-  ['YamlTable', YamlTable],
-  ['GridTable', GridTable],
+  ['YamlTable', YamlTable.default],
+  ['GridTable', GridTable.default],
   ['Attrs', Attrs],
   ['Aside', Aside],
-  ['Anchor', Anchor],
-  // ['Toc', Toc],
+  // ['Anchor', Anchor],
   ['TocDoneRight', TocDoneRight],
   // ['Replacements', Replacements],
   ['YAML', YAML],
@@ -83,11 +51,10 @@ export const modules = Object.fromEntries(moduleDataList);
 
 export const moduleOptionList = {
   MarkdownIt: { html: true, xhtmlOut: true, linkify: true, typography: true },
-  // Metadata: { parseMetadata: YAML.load, meta },
   Container: "spoiler",
   MmdTable : { multiline: true, rowspan: true, headerless: true, multibody: true, autolabel: true },
-  Anchor: { permalink: Anchor.permalink.headerLink() },
-  // Anchor: { permalink: modules.Anchor.permalink.linkInsideHeader({ symbol: '$', placement: 'before' }) },
+  // Anchor: { permalink: Anchor.permalink.headerLink() },
+  // Anchor: { permalink: modules.Anchor.permalink.linkInsideHeader({ symbol: `&nbsp;#`, placement: 'before' }) },
   YAML: { defer: true },
 }
 
